@@ -48,8 +48,7 @@ header{
     font-size: 1.8rem;
 }
 footer{
-    display: flex;
-    justify-content: flex-start;
+    @include start-left;
     height:500px;
     width: 100%;
     background-color: $colour_footer;
@@ -57,9 +56,7 @@ footer{
     align-items: center;
 }
 .div_footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include column-start;
     width: 90%;
     height: 100%;
     h3{
