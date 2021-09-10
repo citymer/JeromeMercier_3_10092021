@@ -4,6 +4,7 @@ h1, p {
 
 h1 {
   font-size: 2rem;
+  margin: 0;
 }
 
 html, body {
@@ -74,6 +75,11 @@ header {
 
 .fa-map-marker-alt {
   font-size: 1.8rem;
+}
+
+.reserver {
+  height: 750px;
+  background-color: #f6f6f6;
 }
 
 footer {
