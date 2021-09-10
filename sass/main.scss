@@ -1,7 +1,5 @@
-$colour_primaire:#9356dc;
-$colour_secondaire:#ff79da;
-$colour_tertiaire:#99e2d0;
-h1 p{
+@import "./utils/variables.scss";
+h1 ,p{
     font-family: 'Roboto', sans-serif;
 }
 h1{
@@ -14,7 +12,7 @@ body{
 }
 
 
-.logo{
+.logo_placement{
     width:50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -52,7 +50,7 @@ footer{
         margin: 0;
     }
     p{
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         margin-left: 1rem;
     }
     i{
