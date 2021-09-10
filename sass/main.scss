@@ -1,11 +1,66 @@
+$colour_primaire:#9356dc;
+$colour_secondaire:#ff79da;
+$colour_tertiaire:#99e2d0;
+h1 p{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 2rem;
+}
+
 body{
     width: 100%;
+    height: 100%;
 }
 
 
-img{
+.logo{
     width:50%;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 1rem;
 }
+footer{
+    display: flex;
+    justify-content: flex-start;
+    height:500px;
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    align-items: center;
+}
+.div_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 100%;
+    h3{
+        font-size: 2.9rem;
+        font-family: 'Shrikhand', cursive;
+        padding-top: 1rem;
+        padding-left: 3rem;
+        margin-bottom: 1rem;
+    }
+    .div_icon_footer{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 4rem;
+        width: 90%;
+        padding-left: 3rem;
+        margin: 0;
+    }
+    p{
+        font-size: 2.7rem;
+        margin-left: 1rem;
+    }
+    i{
+        width: 2rem;
+        font-size: 1.8rem;
+    }
+}
+.fa-handshake{
+    transform: rotate(135deg);
+}
+
