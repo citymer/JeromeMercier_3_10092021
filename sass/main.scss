@@ -1,4 +1,5 @@
-@import "./utils/variables.scss";
+@import "./directory/utils/variables.scss";
+@import "./directory/utils/mixins.scss";
 h1 ,p{
     font-family: 'Roboto', sans-serif;
 }
@@ -6,17 +7,45 @@ h1{
     font-size: 2rem;
 }
 
-body{
+html,body{
     width: 100%;
     height: 100%;
 }
-
-
+main{
+    height: 1000px;
+}
+header{
+    height: 130px;
+}
 .logo_placement{
     width:50%;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 1rem;
+}
+// section localisation //
+.localisation_restaurants{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color: #eaeaea;
+}
+.localisation{
+    display: flex;
+    width: 280px;
+    height: 100%;
+    p{
+        @include centrageflex_hautbas;
+        font-size: 2rem;
+    }
+}
+.local {
+   @include centrageflex_hautbas; 
+    height: 100%;
+    width: 5rem;
+}
+.fa-map-marker-alt{
+    font-size: 1.8rem;
 }
 footer{
     display: flex;
