@@ -37,3 +37,11 @@
     background: linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
     border:transparent;
 }
+/* DIFFERENTE TAILLE DE BOITES */
+
+@mixin bigbox{
+    height: 660px;
+    width: 850px;
+    background-color: white;
+    border-radius: 2rem;
+}

@@ -1,3 +1,4 @@
+/* DIFFERENTE TAILLE DE BOITES */
 html {
   display: block;
 }
@@ -17,7 +18,7 @@ h1 {
 }
 
 main {
-  height: 1000px;
+  height: 100%;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
   margin-top: 1rem;
 }
 
+/* section localisation */
 .localisationrestaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +84,7 @@ header {
   font-size: 1.8rem;
 }
 
+/* SECTION RESERVER */
 .reserver {
   height: 750px;
   background-color: #f6f6f6;
@@ -115,6 +118,75 @@ button {
   padding: 3rem;
 }
 
+/* SECTION FONCTIONNEMENT */
+.fonctionnement {
+  height: 750px;
+}
+
+.textfonctionnement {
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+/* SECTION RESTAURANTS */
+.restaurants {
+  height: 3300px;
+  background-color: #f6f6f6;
+}
+
+.textrestaurants {
+  padding-top: 9.5rem;
+  padding-left: 4rem;
+}
+
+.div4restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.divpalettedugout {
+  height: 660px;
+  width: 850px;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 5rem;
+}
+
+.divnoteenchantee {
+  height: 660px;
+  width: 850px;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+
+.divlafrancaise {
+  height: 660px;
+  width: 850px;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+
+.divdelicedessens {
+  height: 660px;
+  width: 850px;
+  background-color: white;
+  border-radius: 2rem;
+  margin-top: 3rem;
+}
+
+/* FOOTER */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
