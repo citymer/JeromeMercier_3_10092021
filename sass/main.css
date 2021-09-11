@@ -12,7 +12,7 @@ h1, p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3.7rem;
   margin: 0;
 }
 
@@ -85,6 +85,34 @@ header {
 .reserver {
   height: 750px;
   background-color: #f6f6f6;
+}
+
+.textreservez {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5rem;
+}
+
+.textdecouvrez {
+  text-align: center;
+  font-size: 2.8rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+button {
+  width: 40rem;
+  border-radius: 6rem;
+  color: white;
+  font-size: 2.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  border: transparent;
+  margin-left: 18%;
+  margin-right: 18%;
+  margin-top: 3rem;
+  padding: 3rem;
 }
 
 footer {
