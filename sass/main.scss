@@ -1,15 +1,18 @@
 @import "./directory/utils/variables.scss";
 @import "./directory/utils/mixins.scss";
+html{
+    display: block;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
 h1 ,p{
     font-family: 'Roboto', sans-serif;
 }
 h1{
     font-size: 2rem;
     margin: 0;
-}
-body{
-    width: 100%;
-    height: 100%;
 }
 main{
     height: 1000px;
@@ -25,7 +28,7 @@ header{
     display: flex;
     justify-content: center;
     height: 120px;
-    background-color: #eaeaea;
+    background:linear-gradient(to top,#eaeaea 95%,rgb(172, 172, 172));
 }
 .localisation{
     display: flex;
