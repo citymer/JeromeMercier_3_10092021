@@ -20,14 +20,14 @@ header {
   height: 130px;
 }
 
-.logo_placement {
+.logoplacement {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 1rem;
 }
 
-.localisation_restaurants {
+.localisationrestaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
