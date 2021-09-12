@@ -1,7 +1,10 @@
+
 @import "./directory/utils/variables.scss";
 @import "./directory/utils/mixins.scss";
 html{
-    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 body{
     width: 100%;
@@ -18,16 +21,25 @@ main{
     height: 100%;
 }
 header{
+    @include centrageflex_hautbas;
     height: 60px;
 }
 .logoplacement{
-    @include ohmyfood;
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    height: 60px;
+}
+.titreohmyfood{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.6rem;
 }
 /* section localisation */
 .localisationrestaurants{
     display: flex;
     justify-content: center;
     height: 60px;
+    width: auto;
     background:linear-gradient(to top,#eaeaea 95%,rgb(172, 172, 172));
 }
 .localisation{
@@ -76,16 +88,18 @@ button{
 }
 .textfonctionnement{
     margin-top: 3rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .divles3etapes{
-    width: 100%;
+    width: 340px;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .etapefonctionnement{
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 330px;
     height: 4.7rem;
     margin-top: 1.5rem;
     margin-right: auto;
@@ -98,15 +112,15 @@ button{
     @include centrageflex_hautbas;
     height: 25px;
     width: 25px;
-    position: absolute;
-    left: 8%;
+    position: relative;
+    left: -4%;
     background-color: $colour_primaire;
     border-radius: 50%;
     color: white;
 }
 .iconfonctionnement{
     width: 25px;
-    margin-left: 2rem;
+    margin-left: 1rem;
     color: gray;
 }
 .textetape{

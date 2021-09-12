@@ -1,7 +1,9 @@
 /* MODELES DE BOUTTON */
 /* DIFFERENTES TAILLE DE BOITES */
 html {
-  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -23,15 +25,32 @@ main {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
 }
 
 .logoplacement {
-  width: 50%;
-  height: 70%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 9rem;
+  height: 60px;
+}
+
+.titreohmyfood {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.6rem;
 }
 
 /* section localisation */
@@ -43,6 +62,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 60px;
+  width: auto;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #eaeaea), to(#acacac));
   background: linear-gradient(to top, #eaeaea 95%, #acacac);
 }
@@ -134,12 +154,14 @@ button {
 
 .textfonctionnement {
   margin-top: 3rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .divles3etapes {
-  width: 100%;
+  width: 340px;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .etapefonctionnement {
@@ -149,7 +171,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 330px;
   height: 4.7rem;
   margin-top: 1.5rem;
   margin-right: auto;
@@ -172,8 +194,8 @@ button {
           align-items: center;
   height: 25px;
   width: 25px;
-  position: absolute;
-  left: 8%;
+  position: relative;
+  left: -4%;
   background-color: #9356dc;
   border-radius: 50%;
   color: white;
@@ -181,7 +203,7 @@ button {
 
 .iconfonctionnement {
   width: 25px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   color: gray;
 }
 
