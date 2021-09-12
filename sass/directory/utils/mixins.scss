@@ -17,6 +17,7 @@
 
 @mixin ohmyfood{
     width:50%;
+    height: 70%;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 1rem;   
@@ -26,22 +27,22 @@
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 5rem;   
+    padding-top: 3rem;   
 }
-
+/* MODELES DE BOUTTON */
 @mixin buttondegraded {
-    width: 40rem;
-    border-radius: 6rem;
+    width: 220px;
+    border-radius: 3rem;
     color:white;
-    font-size: 2.5rem;
+    font-size: 1rem;
     background: linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
     border:transparent;
 }
-/* DIFFERENTE TAILLE DE BOITES */
+/* DIFFERENTES TAILLE DE BOITES */
 
 @mixin bigbox{
-    height: 660px;
-    width: 850px;
+    height: 250px;
+    width: 320px;
     background-color: white;
     border-radius: 2rem;
 }
