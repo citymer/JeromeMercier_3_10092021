@@ -17,8 +17,8 @@
 
 @mixin centeringtext {
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 3rem;   
 }
 /* MODELES DE BOUTTON */
@@ -36,5 +36,10 @@
     height: 250px;
     width: 320px;
     background-color: white;
-    border-radius: 2rem;
+    border-radius: 1rem;
+}
+@mixin divphotoimg{
+    width: 320px;
+    height: 180px;
+    border-radius: 1rem 1rem 0rem 0rem;
 }

@@ -122,13 +122,14 @@ header {
 
 .textreservez {
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 3rem;
 }
 
 .textdecouvrez {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1rem;
 }
 
@@ -216,41 +217,52 @@ button {
 .restaurants {
   height: 1250px;
   background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .textrestaurants {
   padding-top: 4.5rem;
-  padding-left: 2rem;
 }
 
 .div4restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  width: 320px;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .divpalettedugout {
   height: 250px;
   width: 320px;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-top: 1.6rem;
+}
+
+.divphoto {
+  width: 320px;
+  height: 180px;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+img {
+  width: 320px;
+  height: 180px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .divnoteenchantee {
   height: 250px;
   width: 320px;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-top: 1.4rem;
 }
 
@@ -258,7 +270,7 @@ button {
   height: 250px;
   width: 320px;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-top: 1.4rem;
 }
 
@@ -266,8 +278,19 @@ button {
   height: 250px;
   width: 320px;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-top: 1.4rem;
+}
+
+.nouveau {
+  position: absolute;
+  padding: 0.3rem;
+  background-color: #99e2d0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #039671;
+  margin-left: 15rem;
+  margin-top: 1.5rem;
 }
 
 /* FOOTER */

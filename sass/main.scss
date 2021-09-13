@@ -69,10 +69,13 @@ header{
 }
 .textreservez{
     @include centeringtext;
+    
 }
 .textdecouvrez{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1rem;
+    
 }
 button{
     @include buttondegraded;
@@ -131,21 +134,28 @@ button{
 .restaurants{
     height: 1250px;
     background-color: $colour_backround;
+    display: flex;
+    justify-content: center;
 }
 .textrestaurants{
     padding-top: 4.5rem;
-    padding-left: 2rem;
 }
 .div4restaurants{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 320px;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .divpalettedugout{
     @include bigbox;
     margin-top: 1.6rem;
+}
+.divphoto{
+    @include divphotoimg;
+}
+img{
+    @include divphotoimg;
+    object-fit: cover;
 }
 .divnoteenchantee{
     @include bigbox;
@@ -158,6 +168,16 @@ button{
 .divdelicedessens{
     @include bigbox;
     margin-top: 1.4rem;
+}
+.nouveau{
+    position: absolute;
+    padding: 0.3rem;
+    background-color: $colour_tertiaire;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color:#039671;
+    margin-left: 15rem;
+    margin-top: 1.5rem;
 }
 /* FOOTER */
 footer{
