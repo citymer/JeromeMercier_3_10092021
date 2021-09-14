@@ -1,9 +1,10 @@
 @import "./directory/utils/variables.scss";
 @import "./directory/utils/mixins.scss";
-html{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+* {
+    box-sizing: border-box;
+}
+html,body{
+    display: block;
 }
 body{
     width: 100%;
@@ -22,6 +23,7 @@ main{
 header{
     @include centrageflex_hautbas;
     height: 60px;
+    width: 100%;
 }
 .logoplacement{
     display: flex;
@@ -31,19 +33,19 @@ header{
 }
 .titreohmyfood{
     font-family: 'Shrikhand', cursive;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 /* section localisation */
 .localisationrestaurants{
     display: flex;
     justify-content: center;
     height: 60px;
-    width: auto;
+    width: 100%;
     background:linear-gradient(to top,#eaeaea 95%,rgb(172, 172, 172));
 }
 .localisation{
     display: flex;
-    width: 280px;
+    max-width: 270px;
     height: 100%;
     p{
         @include centrageflex_hautbas;
@@ -53,7 +55,7 @@ header{
 .local {
    @include centrageflex_hautbas; 
     height: 100%;
-    width: 5rem;
+    width: 3rem;
 }
 .fa-map-marker-alt{
     font-size: 1.2rem;
@@ -64,6 +66,7 @@ header{
     flex-direction: column;
     text-align: center;
     height: 300px;
+    width: 100%;
     background-color: $colour_backround;
 }
 .textreservez{
@@ -71,17 +74,12 @@ header{
     
 }
 .textdecouvrez{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1rem;
-    
+    font-size: 1rem;    
 }
 button{
     @include buttondegraded;
     margin-top: 1.2rem;
     padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
     cursor: pointer;
     &:hover{
         background: linear-gradient(to bottom,#ff96e1,#9c68db );
@@ -91,6 +89,8 @@ button{
 }
 /* SECTION FONCTIONNEMENT */
 .fonctionnement{
+    display: flex;
+    justify-content: center;
     height: 400px;
     width: 100%;
 }
@@ -101,8 +101,6 @@ button{
 .divles3etapes{
     width: 340px;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .etapefonctionnement{
     display: flex;
@@ -110,8 +108,6 @@ button{
     width: 330px;
     height: 4.7rem;
     margin-top: 1.5rem;
-    margin-right: auto;
-    margin-left: auto;
     border-radius: 1.7rem;
     background-color: $colour_backround;
     box-shadow: 0px 2px 2px 2px #e7e7e7;
@@ -147,10 +143,12 @@ button{
 }
 /* SECTION RESTAURANTS */
 .restaurants{
-    height: 1250px;
-    background-color: $colour_backround;
     display: flex;
     justify-content: center;
+    height: 1250px;
+    width: 100%;
+    background-color: $colour_backround;
+ 
 }
 .textrestaurants{
     padding-top: 4.5rem;
@@ -158,8 +156,6 @@ button{
 .div4restaurants{
     width: 320px;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .divpalettedugout{
@@ -247,7 +243,7 @@ footer{
 }
 .div_footer{
     @include column-start;
-    width: 90%;
+    width: 50%;
     height: 100%;
     h3{
         font-size: 1.5rem;

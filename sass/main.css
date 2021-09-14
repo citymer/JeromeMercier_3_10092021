@@ -1,9 +1,12 @@
 /* MODELES DE BOUTTON */
 /* DIFFERENTES TAILLE DE BOITES */
-html {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  display: block;
 }
 
 body {
@@ -35,6 +38,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
+  width: 100%;
 }
 
 .logoplacement {
@@ -50,7 +54,7 @@ header {
 
 .titreohmyfood {
   font-family: 'Shrikhand', cursive;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 /* section localisation */
@@ -62,7 +66,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 60px;
-  width: auto;
+  width: 100%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #eaeaea), to(#acacac));
   background: linear-gradient(to top, #eaeaea 95%, #acacac);
 }
@@ -71,7 +75,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
+  max-width: 270px;
   height: 100%;
 }
 
@@ -99,7 +103,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 5rem;
+  width: 3rem;
 }
 
 .fa-map-marker-alt {
@@ -117,19 +121,16 @@ header {
           flex-direction: column;
   text-align: center;
   height: 300px;
+  width: 100%;
   background-color: #f6f6f6;
 }
 
 .textreservez {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 3rem;
 }
 
 .textdecouvrez {
-  margin-left: auto;
-  margin-right: auto;
   font-size: 1rem;
 }
 
@@ -143,8 +144,6 @@ button {
   border: transparent;
   margin-top: 1.2rem;
   padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
 }
 
@@ -158,6 +157,12 @@ button:hover {
 
 /* SECTION FONCTIONNEMENT */
 .fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 400px;
   width: 100%;
 }
@@ -170,8 +175,6 @@ button:hover {
 .divles3etapes {
   width: 340px;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .etapefonctionnement {
@@ -184,8 +187,6 @@ button:hover {
   width: 330px;
   height: 4.7rem;
   margin-top: 1.5rem;
-  margin-right: auto;
-  margin-left: auto;
   border-radius: 1.7rem;
   background-color: #f6f6f6;
   -webkit-box-shadow: 0px 2px 2px 2px #e7e7e7;
@@ -234,14 +235,15 @@ button:hover {
 
 /* SECTION RESTAURANTS */
 .restaurants {
-  height: 1250px;
-  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 1250px;
+  width: 100%;
+  background-color: #f6f6f6;
 }
 
 .textrestaurants {
@@ -251,8 +253,6 @@ button:hover {
 .div4restaurants {
   width: 320px;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .divpalettedugout {
@@ -401,7 +401,7 @@ footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 90%;
+  width: 50%;
   height: 100%;
 }
 
