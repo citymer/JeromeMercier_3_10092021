@@ -250,12 +250,69 @@ button {
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
-img {
+.divphoto .imgresto {
   width: 320px;
   height: 180px;
   border-radius: 1rem 1rem 0rem 0rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.nomrestaurant {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 1fr;
+      grid-template-columns: 70% 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "nom coeur" "ville coeur";
+  height: 70px;
+  width: 320px;
+}
+
+.nom {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nom;
+  font-weight: bold;
+}
+
+.nom__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'roboto',sans-serif;
+}
+
+.nom__margin-size {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.ville {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ville;
+  font-family: 'roboto',sans-serif;
+}
+
+.coeur {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: coeur;
+}
+
+.coeur .fa-heart {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding-left: 3rem;
 }
 
 .divnoteenchantee {
@@ -284,13 +341,13 @@ img {
 
 .nouveau {
   position: absolute;
+  margin-top: 1.5rem;
+  margin-left: 15rem;
   padding: 0.2rem;
   background-color: #99e2d0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #039671;
-  margin-left: 15rem;
-  margin-top: 1.5rem;
 }
 
 /* FOOTER */
