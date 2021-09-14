@@ -81,7 +81,12 @@ button{
     margin-top: 1.2rem;
     padding: 1rem;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(to bottom,#ff96e1,#9c68db );
+        background-blend-mode: lighten;
+    }   
 }
 /* SECTION FONCTIONNEMENT */
 .fonctionnement{
@@ -108,6 +113,8 @@ button{
     margin-left: auto;
     border-radius: 1.7rem;
     background-color: $colour_backround;
+    box-shadow: 0px 2px 2px 2px #e7e7e7;
+    cursor: pointer;
     &:hover{
         background-color: #f4ecff;
         background-blend-mode: lighten;
@@ -115,8 +122,7 @@ button{
             color: $colour_primaire;
         }
     }
-    box-shadow: 0px 2px 2px 2px #e7e7e7;
-    cursor: pointer;
+    
 
 }
 .numero{
@@ -158,6 +164,7 @@ button{
 .divpalettedugout{
     @include bigbox;
     margin-top: 1.6rem;
+    cursor: pointer;
 }
 .divphoto{
     @include divphotoimg;
@@ -206,14 +213,17 @@ button{
 .divnoteenchantee{
     @include bigbox;
     margin-top: 1.4rem;
+    cursor: pointer;
 }
 .divlafrancaise{
     @include bigbox;
     margin-top: 1.4rem;
+    cursor: pointer;
 }
 .divdelicedessens{
     @include bigbox;
     margin-top: 1.4rem;
+    cursor: pointer;
 }
 .nouveau{   
     position: absolute;
