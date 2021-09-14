@@ -86,6 +86,7 @@ button{
     &:hover{
         background: linear-gradient(to bottom,#ff96e1,#9c68db );
         background-blend-mode: lighten;
+        box-shadow: 0.1rem 0.2rem 0.2rem 0rem rgb(70, 69, 69);
     }   
 }
 /* SECTION FONCTIONNEMENT */

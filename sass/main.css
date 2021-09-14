@@ -152,6 +152,8 @@ button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff96e1), to(#9c68db));
   background: linear-gradient(to bottom, #ff96e1, #9c68db);
   background-blend-mode: lighten;
+  -webkit-box-shadow: 0.1rem 0.2rem 0.2rem 0rem #464545;
+          box-shadow: 0.1rem 0.2rem 0.2rem 0rem #464545;
 }
 
 /* SECTION FONCTIONNEMENT */
