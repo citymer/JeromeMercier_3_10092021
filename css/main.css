@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  display: block;
+}
+
+body {
+  width: auto;
+  margin: 0;
+}
+
+h1, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.logoplacement {
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  height: 60px;
+}
+
+.titreohmyfood {
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.7rem;
+}
+
+/* section localisation */
+.localisationrestaurants {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background: linear-gradient(to top, #eaeaea 95%, #acacac);
+}
+
+.localisation {
+  display: flex;
+  max-width: 270px;
+  height: 100%;
+}
+
+.localisation p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 3rem;
+}
+
+.fa-map-marker-alt {
+  font-size: 1.2rem;
+}
+
+/* SECTION RESERVER */
+.reserver {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.divreserver {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  min-width: 350px;
+  max-width: 730px;
+}
+
+.textreservez {
+  text-align: center;
+  padding-right: 3rem;
+}
+
+.textdecouvrez {
+  font-size: 1rem;
+}
+
+button {
+  width: 220px;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1rem;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  border: transparent;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #ff96e1, #9c68db);
+  background-blend-mode: lighten;
+  box-shadow: 0.1rem 0.2rem 0.2rem 0rem #464545;
+}
+
+/* SECTION FONCTIONNEMENT */
+.fonctionnement {
+  display: flex;
+  justify-content: center;
+  height: 420px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .fonctionnement {
+    height: 470px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fonctionnement {
+    height: 130px;
+  }
+}
+
+.textfonctionnement {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .textfonctionnement {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .textfonctionnement {
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+}
+
+.divles3etapes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .divles3etapes {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  .divles3etapes {
+    flex-direction: inherit;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .divles3etapes {
+    flex-direction: inherit;
+    width: 1240px;
+  }
+}
+
+.etapefonctionnement {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  margin-top: 1.5rem;
+  border-radius: 1.7rem;
+  background-color: #f6f6f6;
+  box-shadow: 0px 2px 2px 2px #e7e7e7;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .etapefonctionnement {
+    width: 300px;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .etapefonctionnement {
+    width: 100%;
+    height: 6rem;
+  }
+}
+
+.etapefonctionnement:hover {
+  background-color: #f4ecff;
+  background-blend-mode: lighten;
+}
+
+.etapefonctionnement:hover .fas {
+  color: #9356dc;
+}
+
+.numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  left: -4%;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+}
+
+.iconfonctionnement {
+  width: 25px;
+  margin-left: 1rem;
+  color: gray;
+}
+
+.textetape {
+  margin-left: 0.8rem;
+  font-weight: bold;
+}
+
+/* SECTION RESTAURANTS */
+.restaurants {
+  display: flex;
+  justify-content: center;
+  height: 1250px;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+@media screen and (min-width: 1280px) {
+  .restaurants {
+    height: 750px;
+  }
+}
+
+.textrestaurants {
+  padding-top: 4.5rem;
+  grid-area: restaurants;
+}
+
+@media screen and (min-width: 1280px) {
+  .textrestaurants {
+    padding-top: 2.5rem;
+  }
+}
+
+.div4restaurants {
+  width: 320px;
+  height: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .div4restaurants {
+    width: 900px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "restaurants restaurants" "palettedugout noteenchantee" "lafrancaise delicedessens";
+  }
+}
+
+.divpalettedugout {
+  height: 250px;
+  width: 320px;
+  background-color: white;
+  border-radius: 1rem;
+  grid-area: palettedugout;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
+
+.divphoto {
+  width: 320px;
+  height: 180px;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.divphoto .imgresto {
+  width: 320px;
+  height: 180px;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
+
+.nomrestaurant {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "nom coeur" "ville coeur";
+  height: 70px;
+  width: 320px;
+}
+
+.nom {
+  grid-area: nom;
+  font-weight: bold;
+}
+
+.nom__element {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'roboto',sans-serif;
+}
+
+.nom__margin-size {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.ville {
+  grid-area: ville;
+  font-family: 'roboto',sans-serif;
+}
+
+.coeur {
+  grid-area: coeur;
+}
+
+.coeur .fa-heart {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding-left: 3rem;
+}
+
+.divnoteenchantee {
+  height: 250px;
+  width: 320px;
+  background-color: white;
+  border-radius: 1rem;
+  grid-area: noteenchantee;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .divnoteenchantee {
+    margin-left: 5rem;
+  }
+}
+
+.divlafrancaise {
+  height: 250px;
+  width: 320px;
+  background-color: white;
+  border-radius: 1rem;
+  grid-area: lafrancaise;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
+
+.divdelicedessens {
+  height: 250px;
+  width: 320px;
+  background-color: white;
+  border-radius: 1rem;
+  grid-area: delicedessens;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .divdelicedessens {
+    margin-left: 5rem;
+  }
+}
+
+.nouveau {
+  position: absolute;
+  margin-top: 1.5rem;
+  margin-left: 15rem;
+  padding: 0.2rem;
+  background-color: #99e2d0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #039671;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  height: 220px;
+  width: 100%;
+  background-color: #353535;
+  color: white;
+  align-items: center;
+}
+
+.div_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+}
+
+.div_footer h3 {
+  font-size: 1.5rem;
+  font-family: 'Shrikhand', cursive;
+  padding-top: 0.4rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.div_footer .div_icon_footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 2rem;
+  width: 90%;
+  padding-left: 3rem;
+  margin: 0;
+}
+
+.div_footer .icon_footer {
+  width: 2rem;
+}
+
+.div_footer p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.div_footer i {
+  width: 2rem;
+  font-size: 1rem;
+}
+
+.fa-handshake {
+  position: absolute;
+  left: 2.1rem;
+  transform: rotate(135deg);
+}
+/*# sourceMappingURL=main.css.map */

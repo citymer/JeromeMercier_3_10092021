@@ -7,7 +7,7 @@ html,body{
     display: block;
 }
 body{
-    width: 100%;
+    width: auto;
     margin: 0;
 }
 h1 ,p{
@@ -16,9 +16,6 @@ h1 ,p{
 h1{
     font-size: 1.4rem;
     margin: 0;
-}
-main{
-    height: 100%;
 }
 header{
     @include centrageflex_hautbas;
@@ -40,7 +37,6 @@ header{
     display: flex;
     justify-content: center;
     height: 60px;
-    width: 100%;
     background:linear-gradient(to top,#eaeaea 95%,rgb(172, 172, 172));
 }
 .localisation{
@@ -63,15 +59,21 @@ header{
 /* SECTION RESERVER */
 .reserver{
     display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: $colour_backround;
+    text-align: center;
+}
+.divreserver{
+    display: flex;
     flex-direction: column;
     text-align: center;
-    height: 300px;
-    width: 100%;
-    background-color: $colour_backround;
+    align-self: center;
+    min-width: 350px;
+    max-width: 730px;
 }
 .textreservez{
     @include centeringtext;
-    
 }
 .textdecouvrez{
     font-size: 1rem;    
@@ -91,36 +93,67 @@ button{
 .fonctionnement{
     display: flex;
     justify-content: center;
-    height: 400px;
-    width: 100%;
+    height: 420px;
+    @include tablet{
+        height: 470px;
+    }
+    @include desktop {
+        height: 130px;
+    }
 }
 .textfonctionnement{
     margin-top: 3rem;
     margin-left: 1rem;
+    @include tablet{
+        margin-top: 1rem;
+    }
+    @include desktop{
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+
 }
 .divles3etapes{
-    width: 340px;
-    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    @include tablet{
+        width: 80%;
+    }
+    @include tabletxl{
+        flex-direction: inherit;
+    }
+    @include desktop{
+        flex-direction:inherit;
+        width: 1240px;
+    }
 }
 .etapefonctionnement{
     display: flex;
     align-items: center;
-    width: 330px;
-    height: 4.7rem;
+    width: 100%;
+    height: 5rem;
     margin-top: 1.5rem;
     border-radius: 1.7rem;
     background-color: $colour_backround;
     box-shadow: 0px 2px 2px 2px #e7e7e7;
     cursor: pointer;
+    @include desktop {
+        width: 300px;
+        margin-left: 2rem;;
+    }
+    @include tablet{
+        width: 100%;
+        height: 6rem;
+    }
     &:hover{
         background-color: #f4ecff;
         background-blend-mode: lighten;
         .fas{
             color: $colour_primaire;
         }
-    }
-    
-
+    }    
 }
 .numero{
     @include centrageflex_hautbas;
@@ -148,18 +181,37 @@ button{
     height: 1250px;
     width: 100%;
     background-color: $colour_backround;
+    @include desktop{
+        height: 750px;
+    }
  
 }
 .textrestaurants{
     padding-top: 4.5rem;
+    grid-area: restaurants;
+    @include desktop{
+        padding-top: 2.5rem;
+    }
 }
 .div4restaurants{
     width: 320px;
     height: 100%;
+    @include desktop {
+        width: 900px;
+        height:700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "restaurants restaurants"
+        "palettedugout noteenchantee"
+        "lafrancaise delicedessens";
+    }
 }
 
 .divpalettedugout{
     @include bigbox;
+    grid-area: palettedugout;
     margin-top: 1.6rem;
     cursor: pointer;
 }
@@ -209,18 +261,27 @@ button{
 
 .divnoteenchantee{
     @include bigbox;
+    grid-area: noteenchantee;
     margin-top: 1.4rem;
     cursor: pointer;
+    @include desktop{
+        margin-left: 5rem;
+    }
 }
 .divlafrancaise{
     @include bigbox;
+    grid-area: lafrancaise;
     margin-top: 1.4rem;
     cursor: pointer;
 }
 .divdelicedessens{
     @include bigbox;
+    grid-area: delicedessens;
     margin-top: 1.4rem;
     cursor: pointer;
+    @include desktop{
+        margin-left: 5rem;
+    }
 }
 .nouveau{   
     position: absolute;
