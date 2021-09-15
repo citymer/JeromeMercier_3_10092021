@@ -14,7 +14,7 @@ h1 ,p{
     font-family: 'Roboto', sans-serif;
 }
 h1{
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin: 0;
 }
 header{
@@ -97,6 +97,9 @@ button{
     @include tablet{
         height: 470px;
     }
+    @include tabletxl{
+        height: 210px;
+    }
     @include desktop {
         height: 130px;
     }
@@ -106,6 +109,9 @@ button{
     margin-left: 1rem;
     @include tablet{
         margin-top: 1rem;
+    }
+    @include tabletxl{
+        margin-right: 3rem;
     }
     @include desktop{
         margin-right: 2rem;
@@ -123,6 +129,8 @@ button{
     }
     @include tabletxl{
         flex-direction: inherit;
+        justify-content: flex-start;
+        width: 95%;
     }
     @include desktop{
         flex-direction:inherit;
@@ -142,6 +150,11 @@ button{
     @include desktop {
         width: 300px;
         margin-left: 2rem;;
+    }
+    @include tabletxl{
+        width: 200px;
+        height: 150px;
+        margin-left: 2rem;
     }
     @include tablet{
         width: 100%;

@@ -16,7 +16,7 @@ h1, p {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -131,6 +131,12 @@ button:hover {
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  .fonctionnement {
+    height: 210px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .fonctionnement {
     height: 130px;
@@ -145,6 +151,12 @@ button:hover {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .textfonctionnement {
     margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  .textfonctionnement {
+    margin-right: 3rem;
   }
 }
 
@@ -171,6 +183,8 @@ button:hover {
 @media screen and (min-width: 992px) and (max-width: 1279px) {
   .divles3etapes {
     flex-direction: inherit;
+    justify-content: flex-start;
+    width: 95%;
   }
 }
 
@@ -196,6 +210,14 @@ button:hover {
 @media screen and (min-width: 1280px) {
   .etapefonctionnement {
     width: 300px;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  .etapefonctionnement {
+    width: 200px;
+    height: 150px;
     margin-left: 2rem;
   }
 }
