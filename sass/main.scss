@@ -130,7 +130,6 @@ button{
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    width: 80%;
     @include desktop{
         flex-direction:inherit;
         width: 98%;
@@ -157,7 +156,6 @@ button{
 .etapefonctionnement{
     display: flex;
     align-items: center;
-    width: 100%;
     height: 5rem;
     margin-top: 1.5rem;
     border-radius: 1.7rem;
@@ -257,8 +255,14 @@ button{
     grid-area: palettedugout;
     margin-top: 1.6rem;
     cursor: pointer;
+    @include desktop{
+        width: 420px;
+    }
     @include tabletxl{
         width: 420px;
+    }
+    @include mobile{
+        width: 320px;
     }
 }
 .divphoto{
@@ -266,12 +270,24 @@ button{
     .imgresto{
         @include divphotoimg;
         object-fit: cover;
+        @include desktop{
+            width: 420px;
+        }
         @include tabletxl{
             width: 420px;
         }
+        @include mobile{
+            width: 320px;
+        }
+    }
+    @include desktop{
+        width: 420px;
     }
     @include tabletxl{
         width: 420px;
+    }
+    @include mobile{
+        width: 320px;
     }
 }
 .nomrestaurant{
@@ -283,8 +299,14 @@ button{
     "ville coeur";
     height: 70px;
     width: 320px;
+    @include desktop{
+        width: 420px;
+    }
     @include tabletxl{
         width: 420px;
+    }
+    @include tablet{
+        width: 320px;
     }
     @include mobile{
         width: 320px;
@@ -324,12 +346,17 @@ button{
     cursor: pointer;
     @include desktop{
         margin-left: 5rem;
+        width: 420px;
     }
     @include tabletxl{
         width: 420px;
     }
     @include tablet{
+        width: 320px;
         margin-left: 0;
+    }
+    @include mobile{
+        width: 320px;
     }
 }
 .divlafrancaise{
@@ -337,8 +364,17 @@ button{
     grid-area: lafrancaise;
     margin-top: 1.4rem;
     cursor: pointer;
+    @include desktop{
+        width: 420px;
+    }
     @include tabletxl{
         width: 420px;
+    }
+    @include tablet{
+        width: 320px;
+    }
+    @include mobile{
+        width: 320px;
     }
 }
 .divdelicedessens{
@@ -348,9 +384,15 @@ button{
     cursor: pointer;
     @include desktop{
         margin-left: 5rem;
+        width: 420px;
     }
     @include tabletxl{
         width: 420px;
+        margin-left: 5rem;
+    }
+    @include tablet{
+        width: 320px;
+        margin-left: 0;
     }
     @include mobile{
         width: 320px;
@@ -360,15 +402,25 @@ button{
 .nouveau{   
     position: absolute;
     margin-top:1.5rem;
-    margin-left: 15rem;
-    padding: 0.2rem;
     background-color: $colour_tertiaire;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     color:#039671;
+    @include desktop{
+        padding: 0.4rem;
+        margin-left: 20rem;
+    }
     @include tabletxl{
         padding: 0.4rem;
         margin-left: 20rem;
+    }
+    @include tablet{
+        margin-left: 15rem;
+        padding: 0.2rem;
+    }
+    @include mobile{
+        margin-left: 15rem;
+        padding: 0.2rem;
     }
 }
 /* FOOTER */
@@ -384,6 +436,9 @@ footer{
     @include column-start;
     width: 50%;
     height: 100%;
+    @include mobile{
+        width: 90%;
+    }
     h3{
         font-size: 1.5rem;
         font-family: 'Shrikhand', cursive;
