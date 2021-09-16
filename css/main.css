@@ -119,27 +119,33 @@ button:hover {
 }
 
 /* SECTION FONCTIONNEMENT */
-.fonctionnement {
-  display: flex;
-  justify-content: center;
-  height: 420px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 1880px) {
   .fonctionnement {
-    height: 470px;
+    display: flex;
+    justify-content: center;
+    height: 130px;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1279px) {
+@media screen and (max-width: 1280px) {
   .fonctionnement {
     height: 210px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 992px) {
   .fonctionnement {
-    height: 130px;
+    display: flex;
+    justify-content: center;
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    justify-content: center;
+    height: 510px;
   }
 }
 
@@ -148,19 +154,19 @@ button:hover {
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .textfonctionnement {
     margin-top: 1rem;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1279px) {
+@media screen and (max-width: 1280px) {
   .textfonctionnement {
     margin-right: 3rem;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .textfonctionnement {
     margin-right: 2rem;
     margin-left: 0;
@@ -174,13 +180,14 @@ button:hover {
   width: 80%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 1880px) {
   .divles3etapes {
-    width: 80%;
+    flex-direction: inherit;
+    width: 98%;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1279px) {
+@media screen and (max-width: 1280px) {
   .divles3etapes {
     flex-direction: inherit;
     justify-content: flex-start;
@@ -188,10 +195,20 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 992px) {
   .divles3etapes {
-    flex-direction: inherit;
-    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .divles3etapes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 450px;
   }
 }
 
@@ -207,25 +224,32 @@ button:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .etapefonctionnement {
-    width: 300px;
+    width: 70%;
     margin-left: 2rem;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1279px) {
+@media screen and (max-width: 1280px) {
   .etapefonctionnement {
-    width: 200px;
+    width: 80%;
     height: 150px;
     margin-left: 2rem;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .etapefonctionnement {
-    width: 100%;
-    height: 6rem;
+    width: 90%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .etapefonctionnement {
+    width: 80%;
+    height: 200px;
   }
 }
 
@@ -271,9 +295,15 @@ button:hover {
   background-color: #f6f6f6;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .restaurants {
     height: 750px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .restaurants {
+    height: 1300px;
   }
 }
 
@@ -282,7 +312,7 @@ button:hover {
   grid-area: restaurants;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .textrestaurants {
     padding-top: 2.5rem;
   }
@@ -293,14 +323,23 @@ button:hover {
   height: 100%;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .div4restaurants {
-    width: 900px;
+    width: 90%;
     height: 700px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "restaurants restaurants" "palettedugout noteenchantee" "lafrancaise delicedessens";
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .div4restaurants {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 320px;
   }
 }
 
@@ -312,6 +351,12 @@ button:hover {
   grid-area: palettedugout;
   margin-top: 1.6rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .divpalettedugout {
+    width: 420px;
+  }
 }
 
 .divphoto {
@@ -327,6 +372,18 @@ button:hover {
   object-fit: cover;
 }
 
+@media screen and (max-width: 1280px) {
+  .divphoto .imgresto {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .divphoto {
+    width: 420px;
+  }
+}
+
 .nomrestaurant {
   display: grid;
   grid-template-columns: 70% 1fr;
@@ -334,6 +391,18 @@ button:hover {
   grid-template-areas: "nom coeur" "ville coeur";
   height: 70px;
   width: 320px;
+}
+
+@media screen and (max-width: 1280px) {
+  .nomrestaurant {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nomrestaurant {
+    width: 320px;
+  }
 }
 
 .nom {
@@ -378,9 +447,21 @@ button:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .divnoteenchantee {
     margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .divnoteenchantee {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .divnoteenchantee {
+    margin-left: 0;
   }
 }
 
@@ -394,6 +475,12 @@ button:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1280px) {
+  .divlafrancaise {
+    width: 420px;
+  }
+}
+
 .divdelicedessens {
   height: 250px;
   width: 320px;
@@ -404,9 +491,22 @@ button:hover {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1880px) {
   .divdelicedessens {
     margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .divdelicedessens {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .divdelicedessens {
+    width: 320px;
+    margin-left: 0;
   }
 }
 
@@ -419,6 +519,13 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #039671;
+}
+
+@media screen and (max-width: 1280px) {
+  .nouveau {
+    padding: 0.4rem;
+    margin-left: 20rem;
+  }
 }
 
 /* FOOTER */
