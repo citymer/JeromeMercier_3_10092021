@@ -584,7 +584,7 @@ button{
 /* FOOTER */
 footer{
     @include start-left;
-    height:220px;
+    height:240px;
     width: auto;
     background-color: $colour_footer;
     color: white;
@@ -613,7 +613,7 @@ footer{
         width: 90%;
     }
     h3{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: 'Shrikhand', cursive;
         padding-top: 0.4rem;
         padding-left: 2rem;
@@ -650,7 +650,7 @@ footer{
         width: 2rem;
     }
     p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-left: 1rem;
         @include desktop{
             font-size: 2rem;
@@ -667,7 +667,7 @@ footer{
     }
 .fa-utensils{
     width: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     @include desktop{
         font-size: 2rem;
     }
@@ -681,7 +681,7 @@ footer{
 }    
 .fa-handshake{
     width: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transform: rotate(135deg);
     @include desktop{
         font-size: 1.6rem;

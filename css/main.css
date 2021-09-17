@@ -238,11 +238,11 @@ header {
 }
 
 button {
-  width: 300px;
-  padding: 1.2rem;
+  width: 340px;
+  padding: 1.5rem;
   border-radius: 3rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   border: transparent;
   margin-top: 1.2rem;
@@ -281,11 +281,11 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   button {
-    width: 300px;
-    padding: 1.2rem;
+    width: 340px;
+    padding: 1.5rem;
     border-radius: 3rem;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background: linear-gradient(to bottom, #ff79da, #9356dc);
     border: transparent;
   }
@@ -909,7 +909,7 @@ button:hover {
 footer {
   display: flex;
   justify-content: flex-start;
-  height: 220px;
+  height: 240px;
   width: auto;
   background-color: #353535;
   color: white;
@@ -961,7 +961,7 @@ footer {
 }
 
 .div_footer h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: 'Shrikhand', cursive;
   padding-top: 0.4rem;
   padding-left: 2rem;
@@ -1019,7 +1019,7 @@ footer {
 }
 
 .div_footer p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
 }
 
@@ -1044,7 +1044,7 @@ footer {
 
 .fa-utensils {
   width: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1068,7 +1068,7 @@ footer {
 
 .fa-handshake {
   width: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transform: rotate(135deg);
 }
 
