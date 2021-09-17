@@ -2,12 +2,7 @@
   box-sizing: border-box;
 }
 
-html, body {
-  display: block;
-}
-
 body {
-  width: auto;
   margin: 0;
 }
 
@@ -20,12 +15,24 @@ h1 {
   margin: 0;
 }
 
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
-  width: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 120px;
+  }
 }
 
 .logoplacement {
@@ -35,9 +42,21 @@ header {
   height: 60px;
 }
 
+@media screen and (max-width: 992px) {
+  .logoplacement {
+    width: 17rem;
+  }
+}
+
 .titreohmyfood {
   font-family: 'Shrikhand', cursive;
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 992px) {
+  .titreohmyfood {
+    font-size: 3rem;
+  }
 }
 
 /* section localisation */
@@ -46,6 +65,12 @@ header {
   justify-content: center;
   height: 60px;
   background: linear-gradient(to top, #eaeaea 95%, #acacac);
+}
+
+@media screen and (max-width: 992px) {
+  .localisationrestaurants {
+    height: 120px;
+  }
 }
 
 .localisation {
@@ -61,6 +86,12 @@ header {
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 992px) {
+  .localisation p {
+    font-size: 2rem;
+  }
+}
+
 .local {
   display: flex;
   justify-content: center;
@@ -69,8 +100,20 @@ header {
   width: 3rem;
 }
 
+@media screen and (max-width: 992px) {
+  .local {
+    width: 5rem;
+  }
+}
+
 .fa-map-marker-alt {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .fa-map-marker-alt {
+    font-size: 3rem;
+  }
 }
 
 /* SECTION RESERVER */
@@ -82,6 +125,12 @@ header {
   text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  .reserver {
+    height: 500px;
+  }
+}
+
 .divreserver {
   display: flex;
   flex-direction: column;
@@ -91,24 +140,35 @@ header {
   max-width: 730px;
 }
 
+@media screen and (max-width: 992px) {
+  .divreserver {
+    height: 80%;
+  }
+}
+
 .textreservez {
   text-align: center;
-  padding-right: 3rem;
 }
 
 .textdecouvrez {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+  .textdecouvrez {
+    font-size: 2rem;
+  }
+}
+
 button {
-  width: 220px;
+  width: 300px;
+  padding: 1.2rem;
   border-radius: 3rem;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   border: transparent;
   margin-top: 1.2rem;
-  padding: 1rem;
   cursor: pointer;
 }
 
@@ -118,18 +178,31 @@ button:hover {
   box-shadow: 0.1rem 0.2rem 0.2rem 0rem #464545;
 }
 
-/* SECTION FONCTIONNEMENT */
-@media screen and (max-width: 2800px) {
-  .fonctionnement {
-    display: flex;
-    justify-content: center;
-    height: 130px;
+@media screen and (max-width: 992px) {
+  button {
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    border: transparent;
   }
+}
+
+/* SECTION FONCTIONNEMENT */
+.fonctionnement {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: auto;
 }
 
 @media screen and (max-width: 1280px) {
   .fonctionnement {
-    height: 210px;
+    display: flex;
+    justify-content: center;
+    height: 590px;
   }
 }
 
@@ -137,7 +210,7 @@ button:hover {
   .fonctionnement {
     display: flex;
     justify-content: center;
-    height: 480px;
+    height: 630px;
   }
 }
 
@@ -154,43 +227,31 @@ button:hover {
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 992px) {
-  .textfonctionnement {
-    margin-top: 1rem;
-  }
-}
-
 @media screen and (max-width: 1280px) {
-  .textfonctionnement {
-    margin-right: 3rem;
-  }
-}
-
-@media screen and (max-width: 2800px) {
   .textfonctionnement {
     margin-right: 2rem;
     margin-left: 0;
   }
 }
 
-.divles3etapes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media screen and (max-width: 992px) {
+  .textfonctionnement {
+    margin-top: 1rem;
+  }
 }
 
-@media screen and (max-width: 2800px) {
-  .divles3etapes {
-    flex-direction: inherit;
-    width: 98%;
-  }
+.divles3etapes {
+  display: flex;
+  justify-content: center;
+  width: 98%;
 }
 
 @media screen and (max-width: 1280px) {
   .divles3etapes {
-    flex-direction: inherit;
-    justify-content: flex-start;
-    width: 95%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
   }
 }
 
@@ -198,7 +259,8 @@ button:hover {
   .divles3etapes {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
+    height: 100%;
   }
 }
 
@@ -207,47 +269,40 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 450px;
+    height: 100%;
   }
 }
 
 .etapefonctionnement {
   display: flex;
   align-items: center;
-  height: 5rem;
   margin-top: 1.5rem;
+  margin-left: 2rem;
   border-radius: 1.7rem;
   background-color: #f6f6f6;
   box-shadow: 0px 2px 2px 2px #e7e7e7;
   cursor: pointer;
-}
-
-@media screen and (max-width: 2800px) {
-  .etapefonctionnement {
-    width: 70%;
-    margin-left: 2rem;
-  }
+  height: 80px;
 }
 
 @media screen and (max-width: 1280px) {
   .etapefonctionnement {
-    width: 80%;
-    height: 150px;
-    margin-left: 2rem;
+    width: 90%;
+    height: 130px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .etapefonctionnement {
-    width: 90%;
-    height: 100px;
+    width: 100%;
+    height: 130px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .etapefonctionnement {
     width: 80%;
-    height: 200px;
+    height: 100px;
   }
 }
 
@@ -260,17 +315,36 @@ button:hover {
   color: #9356dc;
 }
 
+.fa-mobile-alt, .fa-list-ul, .fa-store {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .fa-mobile-alt, .fa-list-ul, .fa-store {
+    font-size: 2.2rem;
+  }
+}
+
 .numero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
   left: -4%;
   background-color: #9356dc;
   border-radius: 50%;
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .numero {
+    height: 45px;
+    width: 45px;
+    font-size: 1.8rem;
+  }
 }
 
 .iconfonctionnement {
@@ -281,58 +355,89 @@ button:hover {
 
 .textetape {
   margin-left: 0.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .textetape {
+    margin-left: 3rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textetape {
+    font-size: 1.2rem;
+  }
 }
 
 /* SECTION RESTAURANTS */
 .restaurants {
   display: flex;
   justify-content: center;
-  height: 1250px;
-  width: 100%;
+  height: 800px;
+  width: auto;
   background-color: #f6f6f6;
 }
 
-@media screen and (max-width: 2800px) {
+@media screen and (max-width: 1280px) {
   .restaurants {
-    height: 750px;
+    height: 1300px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .restaurants {
+    height: 2300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .restaurants {
     height: 1300px;
   }
 }
 
 .textrestaurants {
-  padding-top: 4.5rem;
+  padding-top: 2.5rem;
   grid-area: restaurants;
 }
 
-@media screen and (max-width: 2800px) {
+@media screen and (max-width: 1280px) {
   .textrestaurants {
     padding-top: 2.5rem;
   }
 }
 
 .div4restaurants {
-  width: 320px;
-  height: 100%;
+  height: 700px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "restaurants restaurants" "palettedugout noteenchantee" "lafrancaise delicedessens";
 }
 
-@media screen and (max-width: 2800px) {
+@media screen and (max-width: 1280px) {
   .div4restaurants {
-    width: 90%;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "restaurants restaurants" "palettedugout noteenchantee" "lafrancaise delicedessens";
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 420px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .div4restaurants {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .div4restaurants {
     display: flex;
     flex-direction: column;
@@ -343,7 +448,7 @@ button:hover {
 
 .divpalettedugout {
   height: 250px;
-  width: 320px;
+  width: 420px;
   background-color: white;
   border-radius: 1rem;
   grid-area: palettedugout;
@@ -351,15 +456,17 @@ button:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 2800px) {
+@media screen and (max-width: 1280px) {
   .divpalettedugout {
     width: 420px;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 992px) {
   .divpalettedugout {
-    width: 420px;
+    width: 700px;
+    height: 510px;
+    margin-top: 2rem;
   }
 }
 
@@ -370,50 +477,52 @@ button:hover {
 }
 
 .divphoto {
-  width: 320px;
+  width: 420px;
   height: 180px;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .divphoto {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .divphoto {
+    width: 700px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .divphoto {
+    width: 320px;
+  }
+}
+
 .divphoto .imgresto {
-  width: 320px;
+  width: 420px;
   height: 180px;
   border-radius: 1rem 1rem 0rem 0rem;
   object-fit: cover;
 }
 
-@media screen and (max-width: 2800px) {
-  .divphoto .imgresto {
-    width: 420px;
-  }
-}
-
 @media screen and (max-width: 1280px) {
   .divphoto .imgresto {
     width: 420px;
   }
 }
 
+@media screen and (max-width: 992px) {
+  .divphoto .imgresto {
+    width: 700px;
+    height: 360px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .divphoto .imgresto {
-    width: 320px;
-  }
-}
-
-@media screen and (max-width: 2800px) {
-  .divphoto {
-    width: 420px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .divphoto {
-    width: 420px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .divphoto {
     width: 320px;
   }
 }
@@ -424,13 +533,7 @@ button:hover {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "nom coeur" "ville coeur";
   height: 70px;
-  width: 320px;
-}
-
-@media screen and (max-width: 2800px) {
-  .nomrestaurant {
-    width: 420px;
-  }
+  width: 420px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -441,7 +544,8 @@ button:hover {
 
 @media screen and (max-width: 992px) {
   .nomrestaurant {
-    width: 320px;
+    width: 700px;
+    height: 150px;
   }
 }
 
@@ -468,6 +572,12 @@ button:hover {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 992px) {
+  .nom__margin-size {
+    font-size: 2.3rem;
+  }
+}
+
 .ville {
   grid-area: ville;
   font-family: 'roboto',sans-serif;
@@ -483,33 +593,44 @@ button:hover {
   padding-left: 3rem;
 }
 
+@media screen and (max-width: 992px) {
+  .coeur .fa-heart {
+    margin-left: 3rem;
+    font-size: 3.5rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coeur .fa-heart {
+    margin-left: 0;
+  }
+}
+
 .divnoteenchantee {
   height: 250px;
-  width: 320px;
+  width: 420px;
   background-color: white;
   border-radius: 1rem;
   grid-area: noteenchantee;
   margin-top: 1.4rem;
+  margin-left: auto;
   cursor: pointer;
-}
-
-@media screen and (max-width: 2800px) {
-  .divnoteenchantee {
-    margin-left: 5rem;
-    width: 420px;
-  }
 }
 
 @media screen and (max-width: 1280px) {
   .divnoteenchantee {
+    margin-left: 0;
     width: 420px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .divnoteenchantee {
-    width: 320px;
+    width: 700px;
     margin-left: 0;
+    margin-top: 2rem;
+    height: 510px;
   }
 }
 
@@ -521,18 +642,12 @@ button:hover {
 
 .divlafrancaise {
   height: 250px;
-  width: 320px;
+  width: 420px;
   background-color: white;
   border-radius: 1rem;
   grid-area: lafrancaise;
   margin-top: 1.4rem;
   cursor: pointer;
-}
-
-@media screen and (max-width: 2800px) {
-  .divlafrancaise {
-    width: 420px;
-  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -543,7 +658,9 @@ button:hover {
 
 @media screen and (max-width: 992px) {
   .divlafrancaise {
-    width: 320px;
+    width: 700px;
+    height: 510px;
+    margin-top: 2rem;
   }
 }
 
@@ -555,32 +672,28 @@ button:hover {
 
 .divdelicedessens {
   height: 250px;
-  width: 320px;
+  width: 420px;
   background-color: white;
   border-radius: 1rem;
   grid-area: delicedessens;
   margin-top: 1.4rem;
+  margin-left: auto;
   cursor: pointer;
-}
-
-@media screen and (max-width: 2800px) {
-  .divdelicedessens {
-    margin-left: 5rem;
-    width: 420px;
-  }
 }
 
 @media screen and (max-width: 1280px) {
   .divdelicedessens {
+    margin-left: 0;
     width: 420px;
-    margin-left: 5rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .divdelicedessens {
-    width: 320px;
+    width: 700px;
+    height: 510px;
     margin-left: 0;
+    margin-top: 2rem;
   }
 }
 
@@ -594,17 +707,12 @@ button:hover {
 .nouveau {
   position: absolute;
   margin-top: 1.5rem;
+  padding: 0.4rem;
+  margin-left: 20rem;
   background-color: #99e2d0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
   color: #039671;
-}
-
-@media screen and (max-width: 2800px) {
-  .nouveau {
-    padding: 0.4rem;
-    margin-left: 20rem;
-  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -616,8 +724,8 @@ button:hover {
 
 @media screen and (max-width: 992px) {
   .nouveau {
-    margin-left: 15rem;
-    padding: 0.2rem;
+    margin-left: 38rem;
+    padding: 0.4rem;
   }
 }
 
@@ -633,10 +741,16 @@ footer {
   display: flex;
   justify-content: flex-start;
   height: 220px;
-  width: 100%;
+  width: auto;
   background-color: #353535;
   color: white;
   align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    height: 350px;
+  }
 }
 
 .div_footer {
@@ -645,6 +759,12 @@ footer {
   justify-content: flex-start;
   width: 50%;
   height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .div_footer {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -661,6 +781,12 @@ footer {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+  .div_footer h3 {
+    font-size: 3rem;
+  }
+}
+
 .div_footer .div_icon_footer {
   display: flex;
   justify-content: start;
@@ -669,6 +795,12 @@ footer {
   width: 90%;
   padding-left: 3rem;
   margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .div_footer .div_icon_footer {
+    height: 3rem;
+  }
 }
 
 .div_footer .icon_footer {
@@ -680,14 +812,24 @@ footer {
   margin-left: 1rem;
 }
 
-.div_footer i {
+@media screen and (max-width: 992px) {
+  .div_footer p {
+    font-size: 2rem;
+  }
+}
+
+.div_footer .fa-handshake, .div_footer .fa-utensils {
   width: 2rem;
   font-size: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+  .div_footer .fa-handshake, .div_footer .fa-utensils {
+    font-size: 2rem;
+  }
+}
+
 .fa-handshake {
-  position: absolute;
-  left: 2.1rem;
   transform: rotate(135deg);
 }
 /*# sourceMappingURL=main.css.map */

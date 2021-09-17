@@ -2,13 +2,9 @@
 @import "./directory/utils/mixins.scss";
 * {
     box-sizing: border-box;
-}
-html,body{
-    display: block;
-}
+}    
 body{
-    width: auto;
-    margin: 0;
+    margin:0;
 }
 h1 ,p{
     font-family: 'Roboto', sans-serif;
@@ -16,21 +12,33 @@ h1 ,p{
 h1{
     font-size: 2rem;
     margin: 0;
+    @include tablet{
+        font-size: 3.5rem;
+    }
 }
 header{
     @include centrageflex_hautbas;
     height: 60px;
-    width: 100%;
+    width: auto;
+    @include tablet{
+        height: 120px;
+    }
 }
 .logoplacement{
     display: flex;
     align-items: center;
     width: 9rem;
     height: 60px;
+    @include tablet{
+        width: 17rem;
+    }
 }
 .titreohmyfood{
     font-family: 'Shrikhand', cursive;
     font-size: 1.7rem;
+    @include tablet{
+        font-size: 3rem;
+    }
 }
 /* section localisation */
 .localisationrestaurants{
@@ -38,6 +46,9 @@ header{
     justify-content: center;
     height: 60px;
     background:linear-gradient(to top,#eaeaea 95%,rgb(172, 172, 172));
+    @include tablet{
+        height: 120px;
+    }
 }
 .localisation{
     display: flex;
@@ -46,15 +57,24 @@ header{
     p{
         @include centrageflex_hautbas;
         font-size: 1.1rem;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
 }
 .local {
    @include centrageflex_hautbas; 
     height: 100%;
     width: 3rem;
+    @include tablet{
+        width: 5rem;
+    }
 }
 .fa-map-marker-alt{
     font-size: 1.2rem;
+    @include tablet{
+        font-size: 3rem;
+    }
 }
 /* SECTION RESERVER */
 .reserver{
@@ -63,6 +83,9 @@ header{
     height: 300px;
     background-color: $colour_backround;
     text-align: center;
+    @include tablet{
+        height: 500px;
+    }
 }
 .divreserver{
     display: flex;
@@ -71,39 +94,47 @@ header{
     align-self: center;
     min-width: 350px;
     max-width: 730px;
+    @include tablet{
+        height: 80%;
+    }
 }
 .textreservez{
     @include centeringtext;
 }
 .textdecouvrez{
-    font-size: 1rem;    
+    font-size: 1rem; 
+    @include tablet{
+        font-size: 2rem;
+    }   
 }
 button{
     @include buttondegraded;
     margin-top: 1.2rem;
-    padding: 1rem;
     cursor: pointer;
     &:hover{
         background: linear-gradient(to bottom,#ff96e1,#9c68db );
         background-blend-mode: lighten;
         box-shadow: 0.1rem 0.2rem 0.2rem 0rem rgb(70, 69, 69);
-    }   
+    } 
+    @include tablet{
+        @include buttontablet;
+    }  
 }
 /* SECTION FONCTIONNEMENT */
 .fonctionnement{
- 
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: auto;
     @include desktop {
         display: flex;
         justify-content: center;
-        height: 130px;
-    }
-    @include tabletxl{
-        height: 210px;
+        height: 590px;
     }
     @include tablet{
         display: flex;
         justify-content: center;
-        height: 480px;
+        height: 630px;
     }
     @include mobile{
         display: flex;
@@ -114,70 +145,60 @@ button{
 .textfonctionnement{
     margin-top: 3rem;
     margin-left: 1rem;
-    @include tablet{
-        margin-top: 1rem;
-    }
-    @include tabletxl{
-        margin-right: 3rem;
-    }
     @include desktop{
         margin-right: 2rem;
         margin-left: 0;
+    }
+    @include tablet{
+        margin-top: 1rem;
     }
 
 }
 .divles3etapes{
     display: flex; 
-    flex-direction: column;
     justify-content: center;
+    width: 98%;
     @include desktop{
-        flex-direction:inherit;
-        width: 98%;
-    }
-    @include tabletxl{
-        flex-direction: inherit;
-        justify-content: flex-start;
-        width: 95%;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
     }
     @include tablet{
         display: flex;
         flex-direction: column;
-        width: 50%;
- 
+        width: 80%;
+        height: 100%;
     }
     @include mobile{
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: 450px;
+        height: 100%;
     }
   
 }
 .etapefonctionnement{
     display: flex;
     align-items: center;
-    height: 5rem;
     margin-top: 1.5rem;
+    margin-left: 2rem;
     border-radius: 1.7rem;
     background-color: $colour_backround;
     box-shadow: 0px 2px 2px 2px #e7e7e7;
     cursor: pointer;
+    height: 80px;
     @include desktop {
-        width: 70%;
-        margin-left: 2rem;;
-    }
-    @include tabletxl{
-        width: 80%;
-        height: 150px;
-        margin-left: 2rem;
+        width: 90%;
+        height: 130px;
     }
     @include tablet{
-        width: 90%;
-        height: 100px;
+        width: 100%;
+        height: 130px;
     }
     @include mobile{
         width: 80%;
-        height: 200px;
+        height: 100px;
     }
     &:hover{
         background-color: #f4ecff;
@@ -185,17 +206,30 @@ button{
         .fas{
             color: $colour_primaire;
         }
+ 
     }    
+}
+.fa-mobile-alt, .fa-list-ul,.fa-store{
+    font-size: 1.4rem;
+    @include tablet{
+        font-size: 2.2rem;
+    }
 }
 .numero{
     @include centrageflex_hautbas;
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     left: -4%;
     background-color: $colour_primaire;
     border-radius: 50%;
     color: white;
+    @include tablet{
+        height: 45px;
+        width: 45px;
+        font-size: 1.8rem;
+    }
 }
 .iconfonctionnement{
     width: 25px;
@@ -204,50 +238,70 @@ button{
 }
 .textetape{
     margin-left: 0.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    @include tablet{
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+    @include mobile{
+        font-size: 1.2rem;
+    }
 }
 /* SECTION RESTAURANTS */
 .restaurants{
     display: flex;
     justify-content: center;
-    height: 1250px;
-    width: 100%;
+    height: 800px;
+    width: auto;
     background-color: $colour_backround;
     @include desktop{
-        height: 750px;
+        height: 1300px;
     }
     @include tablet{
+        height: 2300px;
+    }
+    @include mobile{
         height: 1300px;
     }
  
 }
 .textrestaurants{
-    padding-top: 4.5rem;
+    padding-top: 2.5rem;
     grid-area: restaurants;
     @include desktop{
         padding-top: 2.5rem;
     }
 }
 .div4restaurants{
-    width: 320px;
-    height: 100%;
+    height: 700px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "restaurants restaurants"
+    "palettedugout noteenchantee"
+    "lafrancaise delicedessens";
     @include desktop {
-        width: 90%;
-        height:700px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-        "restaurants restaurants"
-        "palettedugout noteenchantee"
-        "lafrancaise delicedessens";
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 420px;
     }
     @include tablet{
         display: flex;
         flex-direction: column;
         height: 100%;
+        width: 700px;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         width: 320px;
     }
+
 }
 
 .divpalettedugout{
@@ -258,8 +312,10 @@ button{
     @include desktop{
         width: 420px;
     }
-    @include tabletxl{
-        width: 420px;
+    @include tablet{
+        width: 700px;
+        height: 510px;
+        margin-top: 2rem;
     }
     @include mobile{
         width: 320px;
@@ -267,28 +323,31 @@ button{
 }
 .divphoto{
     @include divphotoimg;
+    @include desktop{
+        width: 420px;
+    }
+    @include tablet{
+        width: 700px;
+        height: 360px;
+    }
+    @include mobile{
+        width: 320px;
+    }
     .imgresto{
         @include divphotoimg;
         object-fit: cover;
         @include desktop{
             width: 420px;
         }
-        @include tabletxl{
-            width: 420px;
+        @include tablet{
+            width: 700px;
+            height: 360px;
         }
         @include mobile{
             width: 320px;
         }
     }
-    @include desktop{
-        width: 420px;
-    }
-    @include tabletxl{
-        width: 420px;
-    }
-    @include mobile{
-        width: 320px;
-    }
+   
 }
 .nomrestaurant{
     display: grid;
@@ -298,15 +357,13 @@ button{
     "nom coeur"
     "ville coeur";
     height: 70px;
-    width: 320px;
+    width: 420px;
     @include desktop{
         width: 420px;
     }
-    @include tabletxl{
-        width: 420px;
-    }
     @include tablet{
-        width: 320px;
+        width: 700px;
+        height: 150px;
     }
     @include mobile{
         width: 320px;
@@ -323,6 +380,9 @@ button{
     &__margin-size{
         margin-left: 1rem;
         font-size: 1.2rem;
+        @include tablet{
+            font-size: 2.3rem;
+        }
     } 
 }
 .ville{
@@ -334,8 +394,15 @@ button{
     .fa-heart{
         font-size: 1.8rem;
         margin-top: 1rem;
-        padding-left: 3rem;
-        
+        padding-left: 3rem; 
+        @include tablet{
+        margin-left: 3rem;
+        font-size: 3.5rem;
+        margin-top: 3rem;
+        }
+        @include mobile{
+            margin-left: 0;
+        }      
     }
 }
 
@@ -343,17 +410,17 @@ button{
     @include bigbox;
     grid-area: noteenchantee;
     margin-top: 1.4rem;
+    margin-left: auto;
     cursor: pointer;
     @include desktop{
-        margin-left: 5rem;
-        width: 420px;
-    }
-    @include tabletxl{
+        margin-left: 0;
         width: 420px;
     }
     @include tablet{
-        width: 320px;
+        width: 700px;
         margin-left: 0;
+        margin-top: 2rem;
+        height: 510px;
     }
     @include mobile{
         width: 320px;
@@ -367,11 +434,10 @@ button{
     @include desktop{
         width: 420px;
     }
-    @include tabletxl{
-        width: 420px;
-    }
     @include tablet{
-        width: 320px;
+        width: 700px;
+        height: 510px;
+        margin-top: 2rem;
     }
     @include mobile{
         width: 320px;
@@ -381,18 +447,17 @@ button{
     @include bigbox;
     grid-area: delicedessens;
     margin-top: 1.4rem;
+    margin-left: auto;
     cursor: pointer;
     @include desktop{
-        margin-left: 5rem;
+        margin-left: 0;
         width: 420px;
-    }
-    @include tabletxl{
-        width: 420px;
-        margin-left: 5rem;
     }
     @include tablet{
-        width: 320px;
+        width: 700px;
+        height: 510px;
         margin-left: 0;
+        margin-top: 2rem;
     }
     @include mobile{
         width: 320px;
@@ -402,6 +467,8 @@ button{
 .nouveau{   
     position: absolute;
     margin-top:1.5rem;
+    padding: 0.4rem;
+    margin-left: 20rem;
     background-color: $colour_tertiaire;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
@@ -410,13 +477,9 @@ button{
         padding: 0.4rem;
         margin-left: 20rem;
     }
-    @include tabletxl{
-        padding: 0.4rem;
-        margin-left: 20rem;
-    }
     @include tablet{
-        margin-left: 15rem;
-        padding: 0.2rem;
+        margin-left: 38rem;
+        padding: 0.4rem;
     }
     @include mobile{
         margin-left: 15rem;
@@ -427,15 +490,21 @@ button{
 footer{
     @include start-left;
     height:220px;
-    width: 100%;
+    width: auto;
     background-color: $colour_footer;
     color: white;
     align-items: center;
+    @include tablet{
+        height: 350px;
+    }
 }
 .div_footer{
     @include column-start;
     width: 50%;
     height: 100%;
+    @include tablet{
+        width: 70%;
+    }
     @include mobile{
         width: 90%;
     }
@@ -445,6 +514,9 @@ footer{
         padding-top: 0.4rem;
         padding-left: 2rem;
         margin-bottom: 1rem;
+        @include tablet{
+            font-size: 3rem;
+        }
     }
     .div_icon_footer{
         display: flex;
@@ -454,6 +526,9 @@ footer{
         width: 90%;
         padding-left: 3rem;
         margin: 0;
+        @include tablet{
+            height: 3rem;
+        }
     }
     .icon_footer{
         width: 2rem;
@@ -461,15 +536,19 @@ footer{
     p{
         font-size: 1rem;
         margin-left: 1rem;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
-    i{
+    .fa-handshake,.fa-utensils{
         width: 2rem;
         font-size: 1rem;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
 }
 .fa-handshake{
-    position: absolute;
-    left: 2.1rem;
     transform: rotate(135deg);
 }
 

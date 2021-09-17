@@ -16,15 +16,24 @@
 }
 
 @mixin centeringtext {
-    text-align: center;
-    padding-right: 3rem;   
+    text-align: center;   
 }
 // MODELES DE BOUTTON //
 @mixin buttondegraded {
-    width: 220px;
+    width: 300px;
+    padding: 1.2rem;
     border-radius: 3rem;
     color:white;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    background: linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
+    border:transparent;
+}
+@mixin buttontablet{
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    color:white;
+    font-size: 1.6rem;
     background: linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
     border:transparent;
 }
@@ -34,12 +43,12 @@
 
 @mixin bigbox{
     height: 250px;
-    width: 320px;
+    width: 420px;
     background-color: white;
     border-radius: 1rem;
 }
 @mixin divphotoimg{
-    width: 320px;
+    width: 420px;
     height: 180px;
     border-radius: 1rem 1rem 0rem 0rem;
 }
@@ -47,12 +56,7 @@
 
 // BREAKPOINT
 @mixin desktop {
-    @media screen and (max-width:2800px){
-        @content;
-    }
-}
-@mixin tabletxl{
-    @media screen and (max-width:1280px) {
+    @media screen and (max-width:1280px){
         @content;
     }
 }
