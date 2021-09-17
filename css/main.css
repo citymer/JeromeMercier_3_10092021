@@ -21,6 +21,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -185,6 +191,18 @@ button:hover {
     border-radius: 3rem;
     color: white;
     font-size: 1.6rem;
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    border: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    width: 300px;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.2rem;
     background: linear-gradient(to bottom, #ff79da, #9356dc);
     border: transparent;
   }
@@ -473,6 +491,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .divpalettedugout {
     width: 320px;
+    height: 250px;
   }
 }
 
@@ -498,6 +517,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .divphoto {
     width: 320px;
+    height: 180px;
   }
 }
 
@@ -524,6 +544,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .divphoto .imgresto {
     width: 320px;
+    height: 180px;
   }
 }
 
@@ -552,6 +573,7 @@ button:hover {
 @media screen and (max-width: 768px) {
   .nomrestaurant {
     width: 320px;
+    height: 70px;
   }
 }
 
@@ -575,6 +597,12 @@ button:hover {
 @media screen and (max-width: 992px) {
   .nom__margin-size {
     font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nom__margin-size {
+    font-size: 1.2rem;
   }
 }
 
@@ -604,6 +632,8 @@ button:hover {
 @media screen and (max-width: 768px) {
   .coeur .fa-heart {
     margin-left: 0;
+    font-size: 1.8rem;
+    margin-top: 1rem;
   }
 }
 
@@ -753,6 +783,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    height: 220px;
+  }
+}
+
 .div_footer {
   display: flex;
   flex-direction: column;
@@ -787,6 +823,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .div_footer h3 {
+    font-size: 1.5rem;
+  }
+}
+
 .div_footer .div_icon_footer {
   display: flex;
   justify-content: start;
@@ -800,6 +842,12 @@ footer {
 @media screen and (max-width: 992px) {
   .div_footer .div_icon_footer {
     height: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div_footer .div_icon_footer {
+    height: 2rem;
   }
 }
 
@@ -818,6 +866,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .div_footer p {
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+}
+
 .div_footer .fa-handshake, .div_footer .fa-utensils {
   width: 2rem;
   font-size: 1rem;
@@ -826,6 +881,13 @@ footer {
 @media screen and (max-width: 992px) {
   .div_footer .fa-handshake, .div_footer .fa-utensils {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div_footer .fa-handshake, .div_footer .fa-utensils {
+    font-size: 1rem;
+    width: 1rem;
   }
 }
 

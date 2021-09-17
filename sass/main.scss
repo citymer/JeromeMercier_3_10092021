@@ -13,7 +13,10 @@ h1{
     font-size: 2rem;
     margin: 0;
     @include tablet{
-        font-size: 3.5rem;
+        font-size: 3.5rem; 
+    }
+    @include mobile{
+        font-size: 2rem;
     }
 }
 header{
@@ -118,6 +121,9 @@ button{
     } 
     @include tablet{
         @include buttontablet;
+    }
+    @include mobile{
+        @include buttondegraded;
     }  
 }
 /* SECTION FONCTIONNEMENT */
@@ -319,6 +325,7 @@ button{
     }
     @include mobile{
         width: 320px;
+        height: 250px;
     }
 }
 .divphoto{
@@ -332,6 +339,7 @@ button{
     }
     @include mobile{
         width: 320px;
+        height: 180px;
     }
     .imgresto{
         @include divphotoimg;
@@ -345,6 +353,7 @@ button{
         }
         @include mobile{
             width: 320px;
+            height: 180px;
         }
     }
    
@@ -367,6 +376,7 @@ button{
     }
     @include mobile{
         width: 320px;
+        height: 70px;
     }
 }
 .nom{
@@ -382,6 +392,9 @@ button{
         font-size: 1.2rem;
         @include tablet{
             font-size: 2.3rem;
+        }
+        @include mobile{
+            font-size: 1.2rem;
         }
     } 
 }
@@ -402,6 +415,8 @@ button{
         }
         @include mobile{
             margin-left: 0;
+            font-size: 1.8rem;
+            margin-top: 1rem;
         }      
     }
 }
@@ -497,6 +512,9 @@ footer{
     @include tablet{
         height: 350px;
     }
+    @include mobile{
+        height: 220px;
+    }
 }
 .div_footer{
     @include column-start;
@@ -517,6 +535,9 @@ footer{
         @include tablet{
             font-size: 3rem;
         }
+        @include mobile{
+            font-size: 1.5rem;
+        }
     }
     .div_icon_footer{
         display: flex;
@@ -529,6 +550,9 @@ footer{
         @include tablet{
             height: 3rem;
         }
+        @include mobile{
+            height: 2rem;
+        }
     }
     .icon_footer{
         width: 2rem;
@@ -539,12 +563,20 @@ footer{
         @include tablet{
             font-size: 2rem;
         }
+        @include mobile{
+            font-size: 1.3rem;
+            margin-left: 0;
+        }
     }
     .fa-handshake,.fa-utensils{
         width: 2rem;
         font-size: 1rem;
         @include tablet{
             font-size: 2rem;
+        }
+        @include mobile{
+            font-size: 1rem;
+            width: 1rem;
         }
     }
 }
