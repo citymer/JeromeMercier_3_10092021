@@ -15,6 +15,12 @@ h1 {
   margin: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 3.5rem;
@@ -35,6 +41,12 @@ header {
   width: auto;
 }
 
+@media screen and (max-width: 1280px) {
+  header {
+    height: 120px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   header {
     height: 120px;
@@ -48,6 +60,12 @@ header {
   height: 60px;
 }
 
+@media screen and (max-width: 1280px) {
+  .logoplacement {
+    width: 17rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .logoplacement {
     width: 17rem;
@@ -57,6 +75,12 @@ header {
 .titreohmyfood {
   font-family: 'Shrikhand', cursive;
   font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .titreohmyfood {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -71,6 +95,12 @@ header {
   justify-content: center;
   height: 60px;
   background: linear-gradient(to top, #eaeaea 95%, #acacac);
+}
+
+@media screen and (max-width: 1280px) {
+  .localisationrestaurants {
+    height: 120px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -92,6 +122,12 @@ header {
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .localisation p {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .localisation p {
     font-size: 2rem;
@@ -106,6 +142,12 @@ header {
   width: 3rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .local {
+    width: 5rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .local {
     width: 5rem;
@@ -116,9 +158,15 @@ header {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .fa-map-marker-alt {
+    font-size: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .fa-map-marker-alt {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -129,6 +177,12 @@ header {
   height: 300px;
   background-color: #f6f6f6;
   text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .reserver {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -146,6 +200,12 @@ header {
   max-width: 730px;
 }
 
+@media screen and (max-width: 1280px) {
+  .divreserver {
+    height: 80%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .divreserver {
     height: 80%;
@@ -158,6 +218,12 @@ header {
 
 .textdecouvrez {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .textdecouvrez {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -182,6 +248,18 @@ button:hover {
   background: linear-gradient(to bottom, #ff96e1, #9c68db);
   background-blend-mode: lighten;
   box-shadow: 0.1rem 0.2rem 0.2rem 0rem #464545;
+}
+
+@media screen and (max-width: 1280px) {
+  button {
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    border: transparent;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -220,7 +298,7 @@ button:hover {
   .fonctionnement {
     display: flex;
     justify-content: center;
-    height: 590px;
+    height: 630px;
   }
 }
 
@@ -247,8 +325,7 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .textfonctionnement {
-    margin-right: 2rem;
-    margin-left: 0;
+    margin-top: 1rem;
   }
 }
 
@@ -268,7 +345,7 @@ button:hover {
   .divles3etapes {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     height: 100%;
   }
 }
@@ -305,7 +382,7 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .etapefonctionnement {
-    width: 90%;
+    width: 100%;
     height: 130px;
   }
 }
@@ -337,6 +414,12 @@ button:hover {
   font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .fa-mobile-alt, .fa-list-ul, .fa-store {
+    font-size: 2.2rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .fa-mobile-alt, .fa-list-ul, .fa-store {
     font-size: 2.2rem;
@@ -357,6 +440,14 @@ button:hover {
   color: white;
 }
 
+@media screen and (max-width: 1280px) {
+  .numero {
+    height: 45px;
+    width: 45px;
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .numero {
     height: 45px;
@@ -375,6 +466,13 @@ button:hover {
   margin-left: 0.8rem;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1280px) {
+  .textetape {
+    margin-left: 3rem;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -401,7 +499,7 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .restaurants {
-    height: 1300px;
+    height: 2300px;
   }
 }
 
@@ -442,7 +540,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 420px;
+    width: 700px;
   }
 }
 
@@ -476,7 +574,9 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .divpalettedugout {
-    width: 420px;
+    width: 700px;
+    height: 510px;
+    margin-top: 2rem;
   }
 }
 
@@ -503,7 +603,8 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .divphoto {
-    width: 420px;
+    width: 700px;
+    height: 360px;
   }
 }
 
@@ -530,7 +631,8 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .divphoto .imgresto {
-    width: 420px;
+    width: 700px;
+    height: 360px;
   }
 }
 
@@ -559,7 +661,8 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .nomrestaurant {
-    width: 420px;
+    width: 700px;
+    height: 150px;
   }
 }
 
@@ -594,6 +697,12 @@ button:hover {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .nom__margin-size {
+    font-size: 2.3rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .nom__margin-size {
     font-size: 2.3rem;
@@ -619,6 +728,14 @@ button:hover {
   font-size: 1.8rem;
   margin-top: 1rem;
   padding-left: 3rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .coeur .fa-heart {
+    margin-left: 3rem;
+    font-size: 3.5rem;
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -650,8 +767,10 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .divnoteenchantee {
+    width: 700px;
     margin-left: 0;
-    width: 420px;
+    margin-top: 2rem;
+    height: 510px;
   }
 }
 
@@ -682,7 +801,9 @@ button:hover {
 
 @media screen and (max-width: 1280px) {
   .divlafrancaise {
-    width: 420px;
+    width: 700px;
+    height: 510px;
+    margin-top: 2rem;
   }
 }
 
@@ -714,7 +835,9 @@ button:hover {
 @media screen and (max-width: 1280px) {
   .divdelicedessens {
     margin-left: 0;
-    width: 420px;
+    width: 700px;
+    height: 510px;
+    margin-top: 2rem;
   }
 }
 
@@ -749,6 +872,8 @@ button:hover {
   .nouveau {
     padding: 0.4rem;
     margin-left: 20rem;
+    margin-left: 38rem;
+    padding: 0.4rem;
   }
 }
 
@@ -777,6 +902,12 @@ footer {
   align-items: center;
 }
 
+@media screen and (max-width: 1280px) {
+  footer {
+    height: 350px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   footer {
     height: 350px;
@@ -797,6 +928,12 @@ footer {
   height: 100%;
 }
 
+@media screen and (max-width: 1280px) {
+  .div_footer {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .div_footer {
     width: 70%;
@@ -815,6 +952,12 @@ footer {
   padding-top: 0.4rem;
   padding-left: 2rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .div_footer h3 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -839,6 +982,12 @@ footer {
   margin: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .div_footer .div_icon_footer {
+    height: 3rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .div_footer .div_icon_footer {
     height: 3rem;
@@ -860,6 +1009,12 @@ footer {
   margin-left: 1rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .div_footer p {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .div_footer p {
     font-size: 2rem;
@@ -876,6 +1031,12 @@ footer {
 .div_footer .fa-handshake, .div_footer .fa-utensils {
   width: 2rem;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .div_footer .fa-handshake, .div_footer .fa-utensils {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
