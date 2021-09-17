@@ -42,14 +42,14 @@
 // DIFFERENTES TAILLE DE BOITES //
 
 @mixin bigbox{
-    height: 250px;
-    width: 420px;
+    height: 370px;
+    width: 550px;
     background-color: white;
     border-radius: 1rem;
 }
 @mixin divphotoimg{
-    width: 420px;
-    height: 180px;
+    width: 550px;
+    height: 260px;
     border-radius: 1rem 1rem 0rem 0rem;
 }
 

@@ -492,7 +492,7 @@ button:hover {
 .restaurants {
   display: flex;
   justify-content: center;
-  height: 800px;
+  height: 950px;
   width: auto;
   background-color: #f6f6f6;
 }
@@ -528,7 +528,7 @@ button:hover {
 
 .div4restaurants {
   height: 700px;
-  width: 70%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -563,8 +563,8 @@ button:hover {
 }
 
 .divpalettedugout {
-  height: 250px;
-  width: 420px;
+  height: 370px;
+  width: 550px;
   background-color: white;
   border-radius: 1rem;
   grid-area: palettedugout;
@@ -596,8 +596,8 @@ button:hover {
 }
 
 .divphoto {
-  width: 420px;
-  height: 180px;
+  width: 550px;
+  height: 260px;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
@@ -623,8 +623,8 @@ button:hover {
 }
 
 .divphoto .imgresto {
-  width: 420px;
-  height: 180px;
+  width: 550px;
+  height: 260px;
   border-radius: 1rem 1rem 0rem 0rem;
   object-fit: cover;
 }
@@ -655,8 +655,8 @@ button:hover {
   grid-template-columns: 70% 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "nom coeur" "ville coeur";
-  height: 70px;
-  width: 420px;
+  height: 110px;
+  width: 550px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -694,7 +694,7 @@ button:hover {
 
 .nom__margin-size {
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -725,9 +725,10 @@ button:hover {
 }
 
 .coeur .fa-heart {
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 2.7rem;
+  margin-top: 1.5rem;
   padding-left: 3rem;
+  margin-left: 2rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -755,8 +756,8 @@ button:hover {
 }
 
 .divnoteenchantee {
-  height: 250px;
-  width: 420px;
+  height: 370px;
+  width: 550px;
   background-color: white;
   border-radius: 1rem;
   grid-area: noteenchantee;
@@ -790,8 +791,8 @@ button:hover {
 }
 
 .divlafrancaise {
-  height: 250px;
-  width: 420px;
+  height: 370px;
+  width: 550px;
   background-color: white;
   border-radius: 1rem;
   grid-area: lafrancaise;
@@ -822,8 +823,8 @@ button:hover {
 }
 
 .divdelicedessens {
-  height: 250px;
-  width: 420px;
+  height: 370px;
+  width: 550px;
   background-color: white;
   border-radius: 1rem;
   grid-area: delicedessens;
@@ -861,7 +862,7 @@ button:hover {
   position: absolute;
   margin-top: 1.5rem;
   padding: 0.4rem;
-  margin-left: 20rem;
+  margin-left: 28rem;
   background-color: #99e2d0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
