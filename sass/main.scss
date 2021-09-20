@@ -1,5 +1,5 @@
-@import "./directory/utils/variables.scss";
-@import "./directory/utils/mixins.scss";
+@import "./directory/utils/_variables.scss";
+@import "./directory/utils/_mixins.scss";
 * {
     box-sizing: border-box;
 }    
@@ -30,7 +30,7 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 3;
     animation-name: chargement;
     animation-duration: 3s;
     animation-fill-mode: forwards;  
@@ -56,7 +56,8 @@ h1{
     animation-fill-mode: forwards;
 }
 @keyframes spin{
-    99.999%
+   
+   99.999%
   {
     transform:translate(-50%,-50%)rotate(360deg);
     opacity: 1;
@@ -65,7 +66,7 @@ h1{
       opacity: 0;
   }
 }
-
+/* HEADER */
 header{
     @include centrageflex_hautbas;
     height: 60px;
@@ -507,18 +508,43 @@ button{
     grid-area: ville;
     font-family: 'roboto',sans-serif;
 }
-.coeur{
+.coeur,.coeurvide{
     grid-area: coeur;
     
 }
-.fa-heart{
+.coeurvide{
     font-size: 2.7rem;
     margin-top: 1.5rem;
     padding-left: 3rem;
     margin-left: 2rem;
-    transition: all 650ms;
+    cursor: pointer;
     &:hover {
-        color: $colour_secondaire;
+        color: transparent;
+    }
+    @include desktop{
+        margin-left: 3rem;
+        font-size: 3.5rem;
+        margin-top: 3rem; 
+    }
+    @include tablet{
+    margin-left: 3rem;
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    }
+    @include mobile{
+        margin-left: 0;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }      
+}
+.coeur{
+    font-size: 2.9rem;
+    margin-top: 1.4rem;
+    padding-left: 3rem;
+    margin-left: 1.95rem;
+    color: transparent;
+    &:hover{
+        color: darken($colour_secondaire,25%);
     }
     @include desktop{
         margin-left: 3rem;
