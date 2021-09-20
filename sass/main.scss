@@ -406,7 +406,9 @@ button{
     }
 
 }
-
+a:link{
+    text-decoration: none;
+}
 .divpalettedugout{
     @include bigbox;
     grid-area: palettedugout;
