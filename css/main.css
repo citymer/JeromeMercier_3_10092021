@@ -33,6 +33,50 @@ h1 {
   }
 }
 
+/* loader spinner*/
+.chargement {
+  background: linear-gradient(to bottom, #ff96e1, #9c68db);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  animation-name: chargement;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes chargement {
+  99.999% {
+    position: fixed;
+  }
+  100% {
+    position: relative;
+  }
+}
+
+.imgloader {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spin 1s linear 3;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  99.999% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -732,15 +776,20 @@ button:hover {
   grid-area: coeur;
 }
 
-.coeur .fa-heart {
+.fa-heart {
   font-size: 2.7rem;
   margin-top: 1.5rem;
   padding-left: 3rem;
   margin-left: 2rem;
+  transition: all 650ms;
+}
+
+.fa-heart:hover {
+  color: #ff79da;
 }
 
 @media screen and (max-width: 1280px) {
-  .coeur .fa-heart {
+  .fa-heart {
     margin-left: 3rem;
     font-size: 3.5rem;
     margin-top: 3rem;
@@ -748,7 +797,7 @@ button:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .coeur .fa-heart {
+  .fa-heart {
     margin-left: 3rem;
     font-size: 3.5rem;
     margin-top: 3rem;
@@ -756,7 +805,7 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .coeur .fa-heart {
+  .fa-heart {
     margin-left: 0;
     font-size: 1.8rem;
     margin-top: 1rem;
