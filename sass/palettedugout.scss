@@ -1,0 +1,240 @@
+@import "./directory/utils/_variables.scss";
+@import "./directory/utils/_mixins.scss";
+* {
+    box-sizing: border-box;
+}    
+html,body{
+    margin: 0;
+    height: 100%;
+}
+/*   HEADER  */
+header{
+    @include centrageflex_hautbas;
+    height: 60px;
+    width: auto;
+    @include desktop{
+        height: 120px;
+    }
+    @include tablet{
+        height: 120px;
+    }
+}
+.logoplacement{
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    height: 60px;
+    @include desktop{
+        width: 17rem;
+    }
+    @include tablet{
+        width: 17rem;
+    }
+}
+.titreohmyfood{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.7rem;
+    @include desktop{
+        font-size: 3rem;
+    }
+    @include tablet{
+        font-size: 3rem;
+    }
+}
+main{
+    position: relative;
+    height: 100%;
+}
+/*  GRANDE IMAGE  */
+.imgpresentation{
+    height: 650px;
+    width: 100%;
+}
+.imgpalette{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    
+}
+/*  MENU */
+.cartemenu{
+    width: 100%;
+    height: 2760px;
+    background-color: $colour_backround;
+    border-radius: 100px 100px 0px 0px;
+    margin-top: -120px;
+    position: absolute;
+}
+.nometcoeur{
+    display: flex;
+    width: 95%;
+    height: 80px;
+    margin:auto;
+    margin-top: 70px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 3.7rem;
+    @include mobile{
+        height: 40px;
+    }
+}
+.nom{
+    @include mobile{
+        font-size: 2rem;
+    }
+}
+.les2coeurs{
+    display: flex;
+    height: 80px;
+    width: 60px;
+    margin-right: 6rem;
+    margin-left: auto;
+    @include mobile{
+        height: 40px;
+        margin-right: 1rem;
+        
+    }
+}
+.coeurvide{
+    position: relative;
+    font-size: 3.6rem;
+    margin-left: 1.9px;
+    margin-top: 3.5px;
+    cursor: pointer;
+    &:hover {
+        color: transparent;
+    }
+    @include mobile{
+        margin-left: 0;
+        font-size: 1.8rem;
+        margin-top: 2px;
+    }      
+}
+.coeur{
+    position: absolute;
+    font-size: 3.9rem;
+    color: transparent;
+    &:hover{
+        color: darken($colour_secondaire,30%);
+        transition: all 0.4s;
+    }
+    @include mobile{
+        height: 40px;
+        margin-left: 0;
+        font-size: 1.8rem;
+        margin-top: 2px;
+    }      
+}
+/* LES ENTRÉES */
+.texttraitvert{
+    margin-left: 1.8rem;
+    margin-top: 4rem;
+    .textentrées{
+        font-size: 2.5rem;
+    }
+    .traitvert{
+        height: 0.5rem;
+        width: 7rem;
+        margin-top: 1rem;
+        background-color: $colour_tertiaire;
+    }
+}
+.detailplat{
+    width: 90%;
+    height: 160px;
+    margin-top: 2.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 30px;
+}
+.bouttoncommander{
+    
+    @include centrageflex_hautbas;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8rem;
+    button{
+        @include buttontablet;
+        font-size: 2.5rem;
+        
+    }
+}
+/* FOOTER */
+footer{
+    @include start-left;
+    height:430px;
+    width: 100%;
+    background-color: $colour_footer;
+    color: white;
+    align-items: center;
+    position: absolute;
+    top: 3350px;
+    @include mobile{
+        height: 220px;
+    }
+}
+.div_footer{
+    @include column-start;
+    width: 80%;
+    height: 100%;
+    @include mobile{
+        width: 90%;
+    }
+    h3{
+        font-size: 3rem;
+        font-family: 'Shrikhand', cursive;
+        padding-top: 0.4rem;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        @include mobile{
+            font-size: 1.5rem;
+        }
+    }
+    .div_icon_footer{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 4rem;
+        width: 90%;
+        padding-left: 3rem;
+        padding-top: 2.5rem;
+        margin: 0;
+        @include mobile{
+            height: 2rem;
+            padding-top: 1rem;
+        }
+    }
+    .icon_footer{
+        width: 2rem;
+    }
+    p{
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        @include mobile{
+            font-size: 1.3rem;
+            margin-left: 0;
+        }
+    }
+   
+    }
+.fa-utensils{
+    width: 1rem;
+    font-size: 2rem;
+    @include mobile{
+        font-size: 1rem;
+        width: 1rem;
+    }
+}    
+.fa-handshake{
+    width: 1rem;
+    font-size: 1.6rem;
+    transform: rotate(135deg);
+    margin-left: 0.7rem;
+    margin-bottom: 0.8rem;
+    @include mobile{
+        font-size: 1rem;
+        width: 1rem;
+        margin: 0;
+
+    }
+}
