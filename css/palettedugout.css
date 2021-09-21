@@ -189,11 +189,27 @@ main {
 .detailplat {
   width: 90%;
   height: 160px;
-  margin-top: 2.2rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   border-radius: 30px;
+}
+
+.detailplat h5 {
+  font-size: 3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.detailplat h6 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .bouttoncommander {
@@ -285,13 +301,13 @@ footer {
   width: 2rem;
 }
 
-.div_footer p {
+.div_footer h4 {
   font-size: 2.5rem;
   margin-left: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .div_footer p {
+  .div_footer h4 {
     font-size: 1.3rem;
     margin-left: 0;
   }
