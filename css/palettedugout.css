@@ -267,6 +267,7 @@ main {
     font-size: 1.4rem;
     background: linear-gradient(to bottom, #ff79da, #9356dc);
     border: transparent;
+    margin-top: 2rem;
   }
 }
 
@@ -281,6 +282,12 @@ footer {
   align-items: center;
   position: absolute;
   top: 3350px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    top: 3250px;
+  }
 }
 
 .div_footer {

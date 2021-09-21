@@ -186,8 +186,8 @@ main{
         font-size: 2.5rem;
         @include mobile{
             @include buttondegraded;
-        }
-        
+            margin-top: 2rem;
+        }    
     }
 }
 /* FOOTER */
@@ -200,6 +200,9 @@ footer{
     align-items: center;
     position: absolute;
     top: 3350px;
+    @include mobile{
+        top: 3250px;
+    }
 }
 .div_footer{
     @include column-start;
