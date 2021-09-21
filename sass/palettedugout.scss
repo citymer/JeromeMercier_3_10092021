@@ -130,12 +130,19 @@ main{
     margin-top: 4rem;
     .textentrées{
         font-size: 2.5rem;
+        @include mobile{
+            font-size: 1.5rem;
+        }
     }
     .traitvert{
         height: 0.5rem;
         width: 7rem;
         margin-top: 1rem;
         background-color: $colour_tertiaire;
+        @include mobile{
+            height: 0.3rem;
+            width: 5rem;
+        }
     }
 }
 .detailplat{
@@ -152,6 +159,10 @@ main{
         padding-left: 1.5rem;
         margin-bottom: 0;
         margin-top: 0;
+        @include mobile{
+            font-size: 1.8rem;
+            padding-top: 3rem;
+        }
     }
     h6{
         font-size: 2.5rem;
@@ -159,6 +170,9 @@ main{
         padding-left: 1.5rem;
         margin-top: 0;
         margin-bottom: 0;
+        @include mobile{
+            font-size: 1.2rem;
+        }
     }
 }
 .bouttoncommander{
@@ -170,6 +184,9 @@ main{
     button{
         @include buttontablet;
         font-size: 2.5rem;
+        @include mobile{
+            @include buttondegraded;
+        }
         
     }
 }
@@ -183,17 +200,11 @@ footer{
     align-items: center;
     position: absolute;
     top: 3350px;
-    @include mobile{
-        height: 220px;
-    }
 }
 .div_footer{
     @include column-start;
     width: 80%;
     height: 100%;
-    @include mobile{
-        width: 90%;
-    }
     h3{
         font-size: 3rem;
         font-family: 'Shrikhand', cursive;
