@@ -85,11 +85,33 @@ main {
 /*  MENU */
 .cartemenu {
   width: 100%;
-  height: 2760px;
+  height: 900px;
   background-color: #eeeeee;
   border-radius: 100px 100px 0px 0px;
   margin-top: -120px;
   position: absolute;
+}
+
+@media screen and (max-width: 1280px) {
+  .cartemenu {
+    height: 2760px;
+  }
+}
+
+/* div entrée plats desserts */
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .menu {
+    display: block;
+  }
+}
+
+.entrées, .plats, .desserts {
+  width: 100%;
 }
 
 .nometcoeur {
@@ -202,7 +224,7 @@ main {
 .detailplat {
   display: flex;
   width: 90%;
-  height: 160px;
+  height: 90px;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
@@ -210,12 +232,26 @@ main {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 1280px) {
+  .detailplat {
+    height: 160px;
+  }
+}
+
 .detailplat h5 {
-  font-size: 3rem;
-  padding-top: 1.5rem;
-  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 0;
-  margin-top: 0;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .detailplat h5 {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -226,11 +262,19 @@ main {
 }
 
 .detailplat h6 {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: lighter;
-  padding-left: 1.5rem;
   margin-top: 0;
-  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .detailplat h6 {
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -245,18 +289,36 @@ main {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 8rem;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .bouttoncommander {
+    margin-top: 8rem;
+  }
 }
 
 .bouttoncommander button {
-  width: 400px;
-  padding: 2.5rem;
+  width: 340px;
+  padding: 1.5rem;
   border-radius: 3rem;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   border: transparent;
-  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .bouttoncommander button {
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    border: transparent;
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -276,13 +338,20 @@ main {
 footer {
   display: flex;
   justify-content: flex-start;
-  height: 430px;
+  height: 230px;
   width: 100%;
   background-color: #353535;
   color: white;
   align-items: center;
   position: absolute;
-  top: 3350px;
+  top: 1480px;
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    top: 3350px;
+    height: 430px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -292,19 +361,32 @@ footer {
 }
 
 .div_footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   width: 80%;
   height: 100%;
 }
 
+@media screen and (max-width: 1280px) {
+  .div_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
 .div_footer h3 {
-  font-size: 3rem;
   font-family: 'Shrikhand', cursive;
-  padding-top: 0.4rem;
+  font-size: 1.7rem;
   padding-left: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .div_footer h3 {
+    font-size: 3rem;
+    padding-top: 0.4rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -317,11 +399,22 @@ footer {
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 4rem;
+  height: 2rem;
   width: 90%;
   padding-left: 3rem;
-  padding-top: 2.5rem;
   margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .div_footer .div_icon_footer {
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .div_footer .div_icon_footer {
+    padding-top: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -336,8 +429,15 @@ footer {
 }
 
 .div_footer h4 {
-  font-size: 2.5rem;
-  margin-left: 1rem;
+  font-size: 1.7rem;
+  margin-left: 0.1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .div_footer h4 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -348,23 +448,34 @@ footer {
 }
 
 .fa-utensils {
-  width: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .fa-utensils {
+    width: 1rem;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .fa-utensils {
     font-size: 1rem;
-    width: 1rem;
   }
 }
 
 .fa-handshake {
-  width: 1rem;
-  font-size: 1.6rem;
+  font-size: 1rem;
   transform: rotate(135deg);
-  margin-left: 0.7rem;
   margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .fa-handshake {
+    width: 1rem;
+    font-size: 1.6rem;
+    margin-left: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
