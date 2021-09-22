@@ -98,6 +98,12 @@ main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cartemenu {
+    height: 1850px;
+  }
+}
+
 /* div entrée plats desserts */
 .menu {
   display: flex;
@@ -197,6 +203,12 @@ main {
   margin-top: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .texttraitvert {
+    margin-top: 3.5rem;
+  }
+}
+
 .texttraitvert .textentrées {
   font-size: 2.5rem;
 }
@@ -238,6 +250,12 @@ main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .detailplat {
+    height: 100px;
+  }
+}
+
 .detailplat h5 {
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -256,8 +274,8 @@ main {
 
 @media screen and (max-width: 768px) {
   .detailplat h5 {
-    font-size: 1.8rem;
-    padding-top: 3rem;
+    font-size: 1.1rem;
+    padding-top: 1.4rem;
   }
 }
 
@@ -279,7 +297,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .detailplat h6 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -295,6 +313,12 @@ main {
 @media screen and (max-width: 1280px) {
   .bouttoncommander {
     margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bouttoncommander {
+    margin-top: 5rem;
   }
 }
 
@@ -330,7 +354,7 @@ main {
     font-size: 1.4rem;
     background: linear-gradient(to bottom, #ff79da, #9356dc);
     border: transparent;
-    margin-top: 2rem;
+    width: 320px;
   }
 }
 
@@ -356,7 +380,8 @@ footer {
 
 @media screen and (max-width: 768px) {
   footer {
-    top: 3250px;
+    top: 2500px;
+    height: 230px;
   }
 }
 

@@ -64,7 +64,10 @@ main{
     margin-top: -120px;
     position: absolute;
     @include desktop{
-    height: 2760px;
+        height: 2760px;
+    }
+    @include mobile{
+        height: 1850px;
     }
 }
 /* div entrée plats desserts */
@@ -141,6 +144,9 @@ main{
 .texttraitvert{
     margin-left: 1.8rem;
     margin-top: 4rem;
+    @include mobile{
+        margin-top: 3.5rem;
+    }
     .textentrées{
         font-size: 2.5rem;
         @include mobile{
@@ -170,6 +176,9 @@ main{
     @include desktop{
         height: 160px;
     }
+    @include mobile{
+        height: 100px;
+    }
     h5{
         font-size: 1.5rem;
         margin-top: 1rem;
@@ -182,8 +191,8 @@ main{
         margin-top: 0;
         }
         @include mobile{
-            font-size: 1.8rem;
-            padding-top: 3rem;
+            font-size: 1.1rem;
+            padding-top: 1.4rem;
         }
     }
     h6{
@@ -198,7 +207,7 @@ main{
         margin-bottom: 0;
         }
         @include mobile{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 }
@@ -209,7 +218,10 @@ main{
     margin-top: 5rem;
     @include desktop{
         margin-top: 8rem;
-    }   
+    } 
+    @include mobile{
+        margin-top: 5rem;
+    }  
     button{
         @include buttondegraded;
         @include desktop{
@@ -218,7 +230,8 @@ main{
         }
         @include mobile{
             @include buttondegraded;
-            margin-top: 2rem;
+            width: 320px;
+            
         }    
     }
 }
@@ -237,7 +250,8 @@ footer{
         height: 430px;
     }
     @include mobile{
-        top: 3250px;
+        top: 2500px;
+        height: 230px;
     }
 }
 .div_footer{
