@@ -409,6 +409,9 @@ button{
 a:link{
     text-decoration: none;
 }
+a:visited{
+    color: black;
+}
 .divpalettedugout{
     @include bigbox;
     grid-area: palettedugout;
@@ -546,7 +549,9 @@ a:link{
     margin-left: 1.95rem;
     color: transparent;
     &:hover{
-        color: darken($colour_secondaire,30%);
+        background:linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         transition: all 0.4s;
     }
     @include desktop{

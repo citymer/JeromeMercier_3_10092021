@@ -142,7 +142,7 @@ main {
   }
 }
 
-.les2coeurs {
+.les2coeurs, .far, .fas {
   display: flex;
   height: 80px;
   width: 60px;
@@ -151,26 +151,27 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .les2coeurs {
+  .les2coeurs, .far, .fas {
     height: 40px;
     margin-right: 1rem;
   }
 }
 
-.coeurvide {
+.coeurvide, .far {
   position: relative;
   font-size: 3.6rem;
   margin-left: 1.9px;
   margin-top: 3.5px;
+  color: black;
   cursor: pointer;
 }
 
-.coeurvide:hover {
+.coeurvide:hover :focus, .far:hover :focus {
   color: transparent;
 }
 
 @media screen and (max-width: 768px) {
-  .coeurvide {
+  .coeurvide, .far {
     margin-left: 0;
     font-size: 1.8rem;
     margin-top: 2px;
@@ -180,11 +181,14 @@ main {
 .coeur {
   position: absolute;
   font-size: 3.9rem;
+  margin-left: 2px;
   color: transparent;
 }
 
 .coeur:hover {
-  color: #df00a1;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   transition: all 0.4s;
 }
 
@@ -318,7 +322,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .bouttoncommander {
-    margin-top: 5rem;
+    margin-top: rem;
   }
 }
 

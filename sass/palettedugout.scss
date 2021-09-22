@@ -98,7 +98,7 @@ main{
         font-size: 2rem;
     }
 }
-.les2coeurs{
+.les2coeurs,.far,.fas{
     display: flex;
     height: 80px;
     width: 60px;
@@ -110,13 +110,14 @@ main{
         
     }
 }
-.coeurvide{
+.coeurvide,.far{
     position: relative;
     font-size: 3.6rem;
     margin-left: 1.9px;
     margin-top: 3.5px;
+    color: black;
     cursor: pointer;
-    &:hover {
+    &:hover :focus{
         color: transparent;
     }
     @include mobile{
@@ -128,9 +129,12 @@ main{
 .coeur{
     position: absolute;
     font-size: 3.9rem;
+    margin-left: 2px;
     color: transparent;
     &:hover{
-        color: darken($colour_secondaire,30%);
+        background:linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
         transition: all 0.4s;
     }
     @include mobile{
@@ -220,7 +224,7 @@ main{
         margin-top: 8rem;
     } 
     @include mobile{
-        margin-top: 5rem;
+        margin-top: rem;
     }  
     button{
         @include buttondegraded;

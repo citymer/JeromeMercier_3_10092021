@@ -618,6 +618,10 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
+
 .divpalettedugout {
   height: 370px;
   width: 550px;
@@ -826,7 +830,9 @@ a:link {
 }
 
 .coeur:hover {
-  color: #df00a1;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   transition: all 0.4s;
 }
 
