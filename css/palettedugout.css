@@ -306,6 +306,26 @@ main {
   }
 }
 
+.prix {
+  font-size: 1.3rem;
+  height: 90px;
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100px;
+  font-size: 2rem;
+  color: white;
+  background-color: #99e2d0;
+  border-radius: 0px 30px 30px 0px;
+}
+
 .bouttoncommander {
   display: flex;
   justify-content: center;
@@ -497,7 +517,6 @@ footer {
 .fa-handshake {
   font-size: 1rem;
   transform: rotate(135deg);
-  margin-bottom: 0.8rem;
 }
 
 @media screen and (max-width: 1280px) {
