@@ -116,7 +116,7 @@ main {
   }
 }
 
-.entrées, .plats, .desserts {
+.entrees, .plats, .desserts {
   width: 100%;
 }
 
@@ -142,22 +142,21 @@ main {
   }
 }
 
-.les2coeurs, .far, .fas {
+.les2coeurs {
   display: flex;
   height: 80px;
-  width: 60px;
   margin-right: 6rem;
   margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {
-  .les2coeurs, .far, .fas {
+  .les2coeurs {
     height: 40px;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 }
 
-.coeurvide, .far {
+.coeurvide {
   position: relative;
   font-size: 3.6rem;
   margin-left: 1.9px;
@@ -166,29 +165,31 @@ main {
   cursor: pointer;
 }
 
-.coeurvide:hover :focus, .far:hover :focus {
+.coeurvide:hover :focus {
   color: transparent;
 }
 
 @media screen and (max-width: 768px) {
-  .coeurvide, .far {
-    margin-left: 0;
-    font-size: 1.8rem;
-    margin-top: 2px;
+  .coeurvide {
+    margin-left: 1px;
+    font-size: 1.6rem;
+    margin-top: 4.5px;
   }
 }
 
 .coeur {
   position: absolute;
   font-size: 3.9rem;
-  margin-left: 2px;
+  margin-left: 0;
   color: transparent;
 }
 
 .coeur:hover {
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   transition: all 0.4s;
 }
 
@@ -213,12 +214,12 @@ main {
   }
 }
 
-.texttraitvert .textentrées {
+.texttraitvert .textentrees {
   font-size: 2.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .texttraitvert .textentrées {
+  .texttraitvert .textentrees {
     font-size: 1.5rem;
   }
 }
@@ -322,7 +323,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .bouttoncommander {
-    margin-top: rem;
+    margin-top: 5rem;
   }
 }
 
@@ -471,7 +472,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .div_footer h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-left: 0;
   }
 }

@@ -78,7 +78,7 @@ main{
         display: block;
     }
 }
-.entrées,.plats,.desserts{
+.entrees,.plats,.desserts{
     width: 100%;
 }
 .nometcoeur{
@@ -98,19 +98,18 @@ main{
         font-size: 2rem;
     }
 }
-.les2coeurs,.far,.fas{
+.les2coeurs{
     display: flex;
     height: 80px;
-    width: 60px;
     margin-right: 6rem;
     margin-left: auto;
     @include mobile{
         height: 40px;
-        margin-right: 1rem;
+        margin-right: 2rem;
         
     }
 }
-.coeurvide,.far{
+.coeurvide{
     position: relative;
     font-size: 3.6rem;
     margin-left: 1.9px;
@@ -121,20 +120,22 @@ main{
         color: transparent;
     }
     @include mobile{
-        margin-left: 0;
-        font-size: 1.8rem;
-        margin-top: 2px;
+        margin-left: 1px;
+        font-size: 1.6rem;
+        margin-top: 4.5px;
     }      
 }
 .coeur{
     position: absolute;
     font-size: 3.9rem;
-    margin-left: 2px;
+    margin-left: 0;
     color: transparent;
     &:hover{
         background:linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color:transparent;
         -webkit-background-clip: text;
+        -moz-background-clip: text;
         transition: all 0.4s;
     }
     @include mobile{
@@ -151,7 +152,7 @@ main{
     @include mobile{
         margin-top: 3.5rem;
     }
-    .textentrées{
+    .textentrees{
         font-size: 2.5rem;
         @include mobile{
             font-size: 1.5rem;
@@ -224,7 +225,7 @@ main{
         margin-top: 8rem;
     } 
     @include mobile{
-        margin-top: rem;
+        margin-top: 5rem;
     }  
     button{
         @include buttondegraded;
@@ -309,7 +310,7 @@ footer{
             margin-left: 1rem;
         }
         @include mobile{
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-left: 0;
         }
     }
