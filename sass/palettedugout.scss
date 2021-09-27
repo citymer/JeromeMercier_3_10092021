@@ -90,6 +90,7 @@ main{
 }
 .entrees,.plats,.desserts{
     width: 100%;
+    font-family: "roboto",sans-serif;
 }
 .nometcoeur{
     display: flex;
@@ -432,7 +433,8 @@ footer{
         width: 2rem;
     }
     h4{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
+        font-family: "roboto",sans-serif;
         margin-left: 0.1rem;
         color: white;
         @include desktop{
