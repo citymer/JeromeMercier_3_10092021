@@ -248,17 +248,23 @@ main {
   margin-right: auto;
   background-color: white;
   border-radius: 30px;
-  cursor: pointer;
 }
 
-.detailplat:hover + .prix {
+.detailplat:hover > .prix {
   transform: translate(0%);
+  margin-right: 0.5rem;
+  transform-origin: right;
 }
 
-.detailplat:hover + .check {
+.detailplat:hover > .check {
   transform: scale(1);
   transform-origin: right;
   transform: scale(1) translate(0%);
+}
+
+.detailplat:hover > .check > .fa-check-circle {
+  transform: rotate(1deg);
+  transition: transform 500ms linear;
 }
 
 @media screen and (max-width: 1280px) {
@@ -296,7 +302,7 @@ h5 {
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: "roboto",sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   margin-bottom: 0;
   padding-left: 1rem;
@@ -305,7 +311,7 @@ h5 {
 @media screen and (max-width: 1280px) {
   h5 {
     font-size: 2.5rem;
-    padding-top: 1.5rem;
+    padding-top: 1.9rem;
     padding-left: 1.5rem;
     margin-top: 0;
   }
@@ -314,7 +320,7 @@ h5 {
 @media screen and (max-width: 768px) {
   h5 {
     font-size: 1.1rem;
-    padding-top: 1.4rem;
+    padding-top: 1.8rem;
   }
 }
 
@@ -323,7 +329,7 @@ h6 {
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: "roboto",sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: lighter;
   margin-top: 0;
   padding-left: 1rem;
@@ -348,12 +354,11 @@ h6 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-top: 1rem;
   font-size: 1.3rem;
   height: 90px;
-  margin-right: 0;
+  width: 70px;
+  padding-bottom: 1.3rem;
   transform: translate(100%);
-  transform-origin: right;
   transition: transform 500ms cubic-bezier(0.41, 0.78, 0.83, 0.67);
 }
 
@@ -361,23 +366,18 @@ h6 {
   transform: translate(0%);
 }
 
-.prix:hover:hover + .check {
-  transform: scale(1);
-  transform-origin: right;
-  transform: scale(1) translate(0%);
-}
-
 @media screen and (max-width: 1280px) {
   .prix {
     font-size: 1.8rem;
-    margin-top: 4.7rem;
+    margin-top: 3rem;
   }
 }
 
 @media screen and (max-width: 1280px) and (max-width: 768px) {
   .prix {
     font-size: 1.3rem;
-    margin-top: 2.5rem;
+    margin-top: 0.2rem;
+    width: 40px;
   }
 }
 
@@ -386,7 +386,7 @@ h6 {
   justify-content: center;
   align-items: center;
   height: 90px;
-  width: 100px;
+  width: 90px;
   font-size: 2rem;
   color: white;
   background-color: #99e2d0;
@@ -413,6 +413,11 @@ h6 {
     width: 100px;
     font-size: 2rem;
   }
+}
+
+.check .fa-check-circle {
+  transform: rotate(360deg);
+  transition: transform 500ms;
 }
 
 .bouttoncommander {
