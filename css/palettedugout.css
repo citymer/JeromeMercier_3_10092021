@@ -240,6 +240,7 @@ main {
 
 .detailplat {
   display: flex;
+  overflow: hidden;
   width: 90%;
   height: 90px;
   margin-top: 2rem;
@@ -247,6 +248,17 @@ main {
   margin-right: auto;
   background-color: white;
   border-radius: 30px;
+  cursor: pointer;
+}
+
+.detailplat:hover + .prix {
+  transform: translate(0%);
+}
+
+.detailplat:hover + .check {
+  transform: scale(1);
+  transform-origin: right;
+  transform: scale(1) translate(0%);
 }
 
 @media screen and (max-width: 1280px) {
@@ -261,7 +273,29 @@ main {
   }
 }
 
-.detailplat h5 {
+.descriptifplat {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1 150px;
+}
+
+.descriptifplat:hover + .prix {
+  transform: translate(0%);
+}
+
+.descriptifplat:hover + .check {
+  transform: scale(1);
+  transform-origin: right;
+  transform: scale(1) translate(0%);
+}
+
+h5 {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "roboto",sans-serif;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 0;
@@ -269,7 +303,7 @@ main {
 }
 
 @media screen and (max-width: 1280px) {
-  .detailplat h5 {
+  h5 {
     font-size: 2.5rem;
     padding-top: 1.5rem;
     padding-left: 1.5rem;
@@ -278,13 +312,17 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .detailplat h5 {
+  h5 {
     font-size: 1.1rem;
     padding-top: 1.4rem;
   }
 }
 
-.detailplat h6 {
+h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "roboto",sans-serif;
   font-size: 1.2rem;
   font-weight: lighter;
   margin-top: 0;
@@ -292,7 +330,7 @@ main {
 }
 
 @media screen and (max-width: 1280px) {
-  .detailplat h6 {
+  h6 {
     font-size: 2rem;
     padding-left: 1.5rem;
     margin-top: 0;
@@ -301,17 +339,46 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .detailplat h6 {
+  h6 {
     font-size: 1rem;
   }
 }
 
 .prix {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 1rem;
   font-size: 1.3rem;
   height: 90px;
-  margin-top: 2.5rem;
-  margin-left: auto;
-  margin-right: 1rem;
+  margin-right: 0;
+  transform: translate(100%);
+  transform-origin: right;
+  transition: transform 500ms cubic-bezier(0.41, 0.78, 0.83, 0.67);
+}
+
+.prix:hover {
+  transform: translate(0%);
+}
+
+.prix:hover:hover + .check {
+  transform: scale(1);
+  transform-origin: right;
+  transform: scale(1) translate(0%);
+}
+
+@media screen and (max-width: 1280px) {
+  .prix {
+    font-size: 1.8rem;
+    margin-top: 4.7rem;
+  }
+}
+
+@media screen and (max-width: 1280px) and (max-width: 768px) {
+  .prix {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+  }
 }
 
 .check {
@@ -324,6 +391,28 @@ main {
   color: white;
   background-color: #99e2d0;
   border-radius: 0px 30px 30px 0px;
+  position: relative;
+  transform: translatex(-9999px);
+  transform: scalex(0);
+  transition: transform 500ms cubic-bezier(0.41, 0.78, 0.83, 0.67);
+  transform-origin: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .check {
+    height: 160px;
+    width: 140px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .check {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+  }
 }
 
 .bouttoncommander {
@@ -355,6 +444,12 @@ main {
   font-size: 1.4rem;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   border: transparent;
+}
+
+.bouttoncommander button:hover {
+  background: linear-gradient(to bottom, #ff96e1, #9c68db);
+  background-blend-mode: lighten;
+  box-shadow: 0.1rem 0.2rem 0.2rem 0rem #464545;
 }
 
 @media screen and (max-width: 1280px) {
