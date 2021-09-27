@@ -117,7 +117,7 @@ main{
     color: black;
     cursor: pointer;
     &:hover :focus{
-        color: transparent;
+        opacity: 0;
     }
     @include mobile{
         margin-left: 1px;
@@ -172,13 +172,14 @@ main{
 .detailplat{
     display: flex;  
     overflow: hidden;
-    width: 90%;
+    width: 80%;
     height: 90px;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;  
     background-color: white;
     border-radius: 30px;
+    opacity: 0;
+    animation:apparition 2s linear;
+    animation-fill-mode: forwards;
     &:hover > .prix{
         transform: translate(0%);
         margin-right: 0.5rem;
@@ -200,6 +201,29 @@ main{
         height: 100px;
     }  
 }
+@keyframes apparition {
+    0%{
+        opacity: 0;
+        margin-top: 5rem;
+    }
+    50%{
+        margin-top: 3rem;
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 2rem;
+    }
+}
+li:nth-child(1){
+    animation-delay: 0.2s;
+}
+li:nth-child(2){
+    animation-delay: 1s;
+}
+li:nth-child(3){
+    animation-delay: 2.1s;
+}
 .descriptifplat{
     text-overflow: ellipsis;
     overflow: hidden;
@@ -219,7 +243,7 @@ h5{
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "roboto",sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 0rem;
     margin-bottom: 0;
     padding-left: 1rem;
@@ -239,7 +263,7 @@ h6{
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "roboto",sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: lighter;
     margin-top: 0;
     padding-left: 1rem;
