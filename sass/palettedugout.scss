@@ -128,7 +128,7 @@ main{
 .coeur{
     position: absolute;
     font-size: 3.9rem;
-    margin-left: 0;
+    margin-left: -0.5px;
     color: transparent;
     &:hover{
         background:linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
@@ -204,7 +204,7 @@ main{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    flex: 1 150px; 
+    flex: 1 320px; 
     &:hover + .prix{
         transform: translate(0%);
     }
@@ -215,13 +215,12 @@ main{
     }
 }
 h5{
-    flex: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "roboto",sans-serif;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    font-size: 1rem;
+    padding-top: 0rem;
     margin-bottom: 0;
     padding-left: 1rem;
     @include desktop{
@@ -231,8 +230,8 @@ h5{
     margin-top: 0;
     }
     @include mobile{
-        font-size: 1.1rem;
-        padding-top: 1.8rem;
+        font-size: 0.8rem;
+        padding-top: 2.2rem;
     }
 }
 h6{
@@ -240,7 +239,7 @@ h6{
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: "roboto",sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     margin-top: 0;
     padding-left: 1rem;
@@ -251,7 +250,7 @@ h6{
     margin-bottom: 0;
     }
     @include mobile{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 .prix{
@@ -260,8 +259,8 @@ h6{
     justify-content: flex-end;
     font-size: 1.3rem;
     height: 90px;
-    width: 70px;
-    padding-bottom: 1.3rem;
+    width: 40px;
+    padding-bottom: 1.6rem;
     transform: translate(100%);
     transition: transform 500ms cubic-bezier(.41,.78,.83,.67); 
     &:hover{
@@ -271,9 +270,9 @@ h6{
         font-size: 1.8rem;
         margin-top: 3rem;
         @include mobile{
-            font-size: 1.3rem;
-            margin-top: 0.2rem;
-            width: 40px;
+            font-size: 1rem;
+            margin-top: 0rem;
+            width: 20px;
         }
     }
 }
