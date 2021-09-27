@@ -98,7 +98,7 @@ main {
 /*  MENU */
 .cartemenu {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background-color: #eeeeee;
   border-radius: 100px 100px 0px 0px;
   margin-top: -120px;
@@ -107,13 +107,13 @@ main {
 
 @media screen and (max-width: 1280px) {
   .cartemenu {
-    height: 2760px;
+    height: 2860px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cartemenu {
-    height: 1850px;
+    height: 1950px;
   }
 }
 
@@ -319,6 +319,10 @@ li:nth-child(2) {
 
 li:nth-child(3) {
   animation-delay: 2.1s;
+}
+
+li:nth-child(4) {
+  animation-delay: 3.2s;
 }
 
 .descriptifplat {
@@ -534,19 +538,19 @@ footer {
   color: white;
   align-items: center;
   position: absolute;
-  top: 1480px;
+  top: 1580px;
 }
 
 @media screen and (max-width: 1280px) {
   footer {
-    top: 3350px;
+    top: 3450px;
     height: 430px;
   }
 }
 
 @media screen and (max-width: 768px) {
   footer {
-    top: 2500px;
+    top: 2600px;
     height: 230px;
   }
 }
