@@ -10,16 +10,17 @@ header{
         height: 120px;
     }
 }
-a:link{
-    text-decoration: none;
-}
-a:visited{
-    color: black;
-}
+
 .fa-arrow-alt-circle-left{
     width: 2rem;
     font-size: 1.5rem;
     color: black;
+    &a:visited{
+        color: black;
+    }
+    &a:link{
+        text-decoration: none;
+    }
 }
 .logoplacement{
     display: flex;
