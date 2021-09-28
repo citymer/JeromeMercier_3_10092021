@@ -519,7 +519,7 @@ a:visited{
     grid-area: coeur;
     
 }
-.far{
+.fa{
     color: black;
 }
 .coeurvide{
@@ -556,7 +556,7 @@ a:visited{
 }
 .coeur{
     font-size: 3rem;
-    margin-top: 1.3rem;
+    margin-top: 1.25rem;
     padding-left: 2.9rem;
     margin-left: 1.95rem;
     color: transparent;
@@ -568,17 +568,17 @@ a:visited{
         transition: all 0.4s;
     }
     @include desktop{
-        margin-left: 2.9rem;
-        font-size: 3.7rem;
-        margin-top: 2.85rem; 
+        margin-left: 2.93rem;
+        font-size: 3.85rem;
+        margin-top: 2.8rem; 
     }
     @include tablet{
-    margin-left: 2.9rem;
-    font-size: 3.7rem;
-    margin-top: 2.85rem;
+    margin-left: 2.93rem;
+    font-size: 3.85rem;
+    margin-top: 2.8rem;
     }
     @include mobile{
-        margin-left: 0;
+        margin-left: 1.9px;
         font-size: 2rem;
         margin-top: 0.9rem;
     }      
