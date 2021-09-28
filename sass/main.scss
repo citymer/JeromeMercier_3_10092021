@@ -519,7 +519,7 @@ a:visited{
     position: relative;
     grid-area: coeur; 
     @include centrageflex_hautbas; 
-    height: 50px;
+    height: 60px;
     width: 52px; 
     margin-top: 2rem;
     @include mobile{
@@ -587,6 +587,7 @@ a:visited{
     font-size: 2.7rem;
     color: transparent;
     width: 55px;
+    margin-top: 4px;
     @include desktop{
         width: 60px;
         font-size: 3.5rem; 
@@ -597,6 +598,8 @@ a:visited{
     @include mobile{
         width: 50px;
         font-size: 1.8rem;
+        margin-top: 4px;
+        margin-right:3px;
     }      
 }
 .divnoteenchantee{
