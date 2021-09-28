@@ -1,0 +1,44 @@
+/*   HEADER  */
+header{
+    @include centrageflex_hautbas;
+    height: 60px;
+    width: auto;
+    @include desktop{
+        height: 120px;
+    }
+    @include tablet{
+        height: 120px;
+    }
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+.fa-arrow-alt-circle-left{
+    width: 2rem;
+    font-size: 1.5rem;
+}
+.logoplacement{
+    display: flex;
+    align-items: center;
+    width: 9rem;
+    height: 60px;
+    @include desktop{
+        width: 17rem;
+    }
+    @include tablet{
+        width: 17rem;
+    }
+}
+.titreohmyfood{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.7rem;
+    @include desktop{
+        font-size: 3rem;
+    }
+    @include tablet{
+        font-size: 3rem;
+    }
+}

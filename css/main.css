@@ -1118,6 +1118,7 @@ footer {
 
 .div_footer p {
   font-size: 1.2rem;
+  color: white;
   margin-left: 1rem;
 }
 
@@ -1192,5 +1193,13 @@ footer {
     width: 1rem;
     margin: 0;
   }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

@@ -734,6 +734,7 @@ footer{
     }
     p{
         font-size: 1.2rem;
+        color: white;
         margin-left: 1rem;
         @include desktop{
             font-size: 2rem;
@@ -782,4 +783,10 @@ footer{
         margin: 0;
 
     }
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color:white;
 }
