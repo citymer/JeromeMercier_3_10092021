@@ -787,6 +787,10 @@ a:visited {
   grid-area: coeur;
 }
 
+.far {
+  color: black;
+}
+
 .coeurvide {
   font-size: 2.7rem;
   color: black;
