@@ -526,6 +526,9 @@ a:visited{
     padding-left: 3rem;
     margin-left: 2rem;
     cursor: pointer;
+    &a:visited{
+        color: black;
+    }
     &:hover {
         color: transparent;
     }

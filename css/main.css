@@ -796,6 +796,10 @@ a:visited {
   cursor: pointer;
 }
 
+.coeurvidea:visited {
+  color: black;
+}
+
 .coeurvide:hover {
   color: transparent;
 }
