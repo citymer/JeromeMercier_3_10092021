@@ -332,7 +332,6 @@ main {
   -moz-text-fill-color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  transition: all 0.4s;
 }
 
 @media screen and (max-width: 768px) {

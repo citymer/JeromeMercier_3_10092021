@@ -81,7 +81,6 @@ main{
         -moz-text-fill-color:transparent;
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        transition: all 0.4s;
     }
     @include mobile{
         height: 40px;
