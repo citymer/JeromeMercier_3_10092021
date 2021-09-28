@@ -529,6 +529,9 @@ a:visited{
     &a:visited{
         color: black;
     }
+    &a:link{
+        text-decoration: black;
+    }
     &:hover {
         color: transparent;
     }

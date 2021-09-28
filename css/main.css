@@ -800,6 +800,10 @@ a:visited {
   color: black;
 }
 
+.coeurvidea:link {
+  text-decoration: black;
+}
+
 .coeurvide:hover {
   color: transparent;
 }
