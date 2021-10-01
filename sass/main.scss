@@ -527,11 +527,11 @@ a:visited{
     }
     &:hover > .coeurvide{
         color: transparent;
-        transition-delay: 500ms;
+        transition-delay: 350ms;
     }
     &:hover > .coeur{
         animation-name: coeurapparition;
-        animation:coeurapparition 500ms ease-in-out;
+        animation:coeurapparition 350ms ease-in-out;
         transform-origin: center;
          background:linear-gradient(to bottom,$colour_secondaire,$colour_primaire);
         -webkit-text-fill-color: transparent;

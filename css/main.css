@@ -802,12 +802,12 @@ a:visited {
 
 .deuxcoeurs:hover > .coeurvide {
   color: transparent;
-  transition-delay: 500ms;
+  transition-delay: 350ms;
 }
 
 .deuxcoeurs:hover > .coeur {
   animation-name: coeurapparition;
-  animation: coeurapparition 500ms ease-in-out;
+  animation: coeurapparition 350ms ease-in-out;
   transform-origin: center;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
